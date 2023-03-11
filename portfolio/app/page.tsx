@@ -1,7 +1,7 @@
 export default function Page() {
-    return(
-        <div className="text-zinc-200">
-            Penis
-        </div>
-    )
-  }
+  return (
+    <div className="p-4">
+            
+    </div>
+  );
+}

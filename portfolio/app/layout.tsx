@@ -1,9 +1,24 @@
-import '../styles/globals.css'
-export default function RootLayout({ children } : { children: React.ReactNode }) {
+import React from "react";
+import "../styles/globals.css";
+// import Footer from "./Footer";
+import Navbar from "./navbar";
 
-    return (
-      <html className='w-full h-full dark:bg-zinc-900' lang="en">
-        <body>{children}</body>
-      </html>
-    );
-  }
+
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <html className="dark:bg-zinc-900 text-zinc-200" lang="en">
+      <body>
+        <Navbar />
+        
+        {children}
+    
+        <footer>{/* <Footer /> */}</footer>
+      </body>
+    </html>
+  );
+}
