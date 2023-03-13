@@ -3,9 +3,9 @@ import { ScrollReveal } from "reveal-on-scroll-react";
 
 import { useRef, useEffect } from "react";
 import Typed from "typed.js";
-export const metadata = {
-  title: "Jared Tucker - Home",
-};
+// export const metadata = {
+//   title: "Jared Tucker - Home",
+// };
 
 export default function Page() {
   const typeWriterRef = useRef(null);
