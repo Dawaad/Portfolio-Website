@@ -64,16 +64,7 @@ function Navbar() {
               <div className="border-b-2 border-b-zinc-600 dark:border-b-zinc-200 origin-right scale-0 group-hover:scale-100 transition-all duration-300"></div>
             </div>
           </Link>
-          <Link
-            className="hover:scale-[1.2] text-zinc-400 hover:text-zinc-300  transition-all group"
-            href={"/skills"}
-          >
-            <p>SKILLS</p>
-            <div className="grid-cols-2 grid">
-              <div className="border-b-2 border-b-zinc-600 dark:border-b-zinc-200 origin-left scale-0 group-hover:scale-100 transition-all duration-300"></div>
-              <div className="border-b-2 border-b-zinc-600 dark:border-b-zinc-200 origin-right scale-0 group-hover:scale-100 transition-all duration-300"></div>
-            </div>
-          </Link>
+          
           <Link
             className="hover:scale-[1.2] text-zinc-400 hover:text-zinc-300 transition-all group"
             href={"/projects"}
@@ -114,7 +105,7 @@ function Navbar() {
         </div>
       </nav>
       <div
-        className={` h-full w-full bg-zinc-100 absolute top-0 right-0 ${
+        className={` h-full w-full bg-zinc-100 absolute top-0 right-0 bottom-0 left-0 ${
           sideBarOpen ? "translate-x-0" : "-translate-x-full"
         } transition-all duration-300 z-40`}
       >
@@ -128,6 +119,7 @@ function Navbar() {
         </div>
         <div className="h-[40rem] flex flex-col justify-center items-center text-2xl font-bold space-y-8">
           <Link
+            onClick={() => setSideBarOpen(false)}
             className="hover:scale-[1.2] text-zinc-900 hover:text-blue-900 transition-all group"
             href={"/"}
           >
@@ -138,6 +130,7 @@ function Navbar() {
             </div>
           </Link>
           <Link
+            onClick={() => setSideBarOpen(false)}
             className="hover:scale-[1.2] text-zinc-900 hover:text-blue-900 transition-all group"
             href={"/about"}
           >
@@ -147,17 +140,9 @@ function Navbar() {
               <div className="border-b-2 border-b-zinc-600 dark:border-b-blue-900 origin-right scale-0 group-hover:scale-100 transition-all duration-300"></div>
             </div>
           </Link>
+          
           <Link
-            className="hover:scale-[1.2] text-zinc-900 hover:text-blue-900  transition-all group"
-            href={"/skills"}
-          >
-            <p>SKILLS</p>
-            <div className="grid-cols-2 grid">
-              <div className="border-b-2 border-b-zinc-600 dark:border-b-blue-900 origin-left scale-0 group-hover:scale-100 transition-all duration-300"></div>
-              <div className="border-b-2 border-b-zinc-600 dark:border-b-blue-900 origin-right scale-0 group-hover:scale-100 transition-all duration-300"></div>
-            </div>
-          </Link>
-          <Link
+            onClick={() => setSideBarOpen(false)}
             className="hover:scale-[1.2] text-zinc-900 hover:text-blue-900 transition-all group"
             href={"/projects"}
           >
@@ -168,6 +153,7 @@ function Navbar() {
             </div>
           </Link>
           <Link
+            onClick={() => setSideBarOpen(false)}
             className="hover:scale-[1.2] text-orange-600 hover:text-orange-500 transition-all group"
             href={"/resume"}
           >
@@ -179,6 +165,7 @@ function Navbar() {
           </Link>
 
           <Link
+            onClick={() => setSideBarOpen(false)}
             className=" hover:scale-[1.2] text-zinc-900 hover:text-blue-900 transition-all group"
             href={"/contact"}
           >
