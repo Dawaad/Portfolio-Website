@@ -34,7 +34,7 @@ export default function Page() {
               Hello! I am Jared Tucker.
             </h1>
             <div>
-              <div className="text-zinc-400 text-xl md:text-2xl font-bold flex lg:px-8 py-2 lg:py-4 lg:justify-end  overflow-hidden ">
+              <div className="text-zinc-400 text-xl md:text-2xl font-bold flex lg:px-8 py-2 lg:py-4 lg:justify-end  overflow-hidden h-[4rem] ">
                 <span id="typed-parent" className="inline-block">
                   <span ref={typeWriterRef}></span>
                 </span>
