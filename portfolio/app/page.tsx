@@ -43,7 +43,7 @@ export default function Page() {
           </div>
         </div>
         <div>{/* Some random mf cool ass svg here please */}</div>
-        <div className="flex items-center justify-center lg:justify-end space-x-6 lg:mr-20 my-5 md:my-0 h-[8rem]">
+        <div className="flex items-center justify-center lg:justify-end space-x-6 mr-10 lg:mr-20 my-5 md:my-0 h-[8rem]">
           <a
             className="cursor-pointer"
             href="https://github.com/Dawaad"
