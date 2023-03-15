@@ -87,14 +87,14 @@ export default function Page() {
         <section className="absolute top-0 left-0 right-0 h-[10rem]  bg-gradient-to-b from-zinc-900  to-zinc-800 " />
         <section className=" relative p-8 flex justify-center md:justify-start ">
           <div className=" ">
-            <div className="p-4 w-fit mt-[5rem] ml-[5rem]">
+            <ScrollReveal.div className="p-4 w-fit mt-[5rem] ml-[5rem]">
               <h2 className="text-3xl md:text-5xl font-bold px-3 py-2">
                 Skills
               </h2>
               <div className="h-[5px] rounded-lg bg-gradient-to-r from-orange-500 to-orange-800" />
-            </div>
+            </ScrollReveal.div>
 
-            <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 p-8 ">
+            <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 p-4 md:p-8 ">
               <div className="flex flex-row">
                 <CodeBracketIcon className="hidden md:w-16 text-orange-700" />
                 <div className="px-8 m-4">
