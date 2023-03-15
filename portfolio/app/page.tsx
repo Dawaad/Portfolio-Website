@@ -96,7 +96,7 @@ export default function Page() {
 
             <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 p-8 ">
               <div className="flex flex-row">
-                <CodeBracketIcon className="w-16 text-orange-700" />
+                <CodeBracketIcon className="hidden md:w-16 text-orange-700" />
                 <div className="px-8 m-4">
                   <div className="col-span-3 text-2xl font-bold mx-2">
                     Front End
@@ -116,7 +116,7 @@ export default function Page() {
                 </div>
               </div>
               <div className="flex flex-row">
-                <WrenchIcon className="w-1/12 md:w-16 text-orange-700" />
+                <WrenchIcon className="hidden md:w-16 text-orange-700" />
                 <div className="px-8 m-4">
                   <div className="col-span-3 text-2xl font-bold mx-2">
                     Back end 
@@ -136,7 +136,7 @@ export default function Page() {
                 </div>
               </div>
               <div className="flex flex-row">
-                <CommandLineIcon className="w-16  text-orange-700" />
+                <CommandLineIcon className="hidden md:w-16  text-orange-700" />
                 <div className="px-8 m-4">
                   <div className="col-span-3 text-2xl font-bold mx-2">
                     Languages
