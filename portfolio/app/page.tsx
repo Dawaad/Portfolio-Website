@@ -100,7 +100,7 @@ export default function Page() {
                   <div className="flex flex-wrap ">
                     {frontEndSkills.map(skill => {
                       return(
-                        <div className="bg-zinc-700 bg-opacity-60 rounded-2xl p-2 text-sm m-2 text-zinc-400">{skill}</div>
+                        <div key={skill} className="bg-zinc-700 bg-opacity-60 rounded-2xl p-2 text-sm m-2 text-zinc-400">{skill}</div>
                       )
                     })}
                   </div>
@@ -113,7 +113,7 @@ export default function Page() {
                   <div className="flex flex-wrap
                   "> {backEndSkills.map(skill => {
                       return(
-                        <div className="bg-zinc-700 bg-opacity-60 rounded-2xl p-2 text-sm m-2 text-zinc-400">{skill}</div>
+                        <div key={skill} className="bg-zinc-700 bg-opacity-60 rounded-2xl p-2 text-sm m-2 text-zinc-400">{skill}</div>
                       )
                     })}</div>
                 </div>
@@ -123,7 +123,7 @@ export default function Page() {
                 <div className="px-8 m-4">
                   <div className="col-span-3 text-2xl font-bold mx-2">Languages</div>
                   <div className="flex flex-wrap">{languages.map(language => {
-                    return(<div className="bg-zinc-700 bg-opacity-60 rounded-2xl text-sm m-2 p-2 text-zinc-300">
+                    return(<div key={language} className="bg-zinc-700 bg-opacity-60 rounded-2xl text-sm m-2 p-2 text-zinc-300">
                       {language}
                     </div>)
                   })}</div>
