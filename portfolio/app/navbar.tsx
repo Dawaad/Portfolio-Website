@@ -8,7 +8,7 @@ function Navbar() {
 
   return (
     <>
-      <nav className="bg-zinc-900 bg-opacity-60 h-[6rem] sticky top-0 left-0 right-0 grid grid-cols-4 text-zinc-200 z-[99]">
+      <nav className={`bg-zinc-900 bg-opacity-70 h-[6rem] sticky top-0 left-0 right-0 grid grid-cols-4 text-zinc-200 z-40 ${sideBarOpen? 'opacity-0 z-0' :''}`}>
         <Link
           href={"/"}
           id="nav-logo"
