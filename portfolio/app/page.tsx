@@ -4,8 +4,13 @@ import { ScrollReveal } from "reveal-on-scroll-react";
 import Image from "next/image";
 import { useRef, useEffect } from "react";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
+import {frontEndSkills,backEndSkills,languages} from '../information/skills'
+import {
+  CommandLineIcon,
+  ComputerDesktopIcon,
+  CodeBracketIcon,
+} from "@heroicons/react/24/outline";
 import Typed from "typed.js";
-
 
 export default function Page() {
   const typeWriterRef = useRef(null);
@@ -73,12 +78,47 @@ export default function Page() {
           </div>
         </div>
       </div>
-      <div id="skills" className=" h-[40rem] bg-zinc-600 relative">
-        <section className="absolute top-0 left-0 right-0 h-[15rem]  bg-gradient-to-b from-zinc-900  to-zinc-600 " />
-        <section className="text-zinc-200 relative px-8 py-10 mt-4 flex justify-center">
-          <div className="">
-            <h2 className="text-4xl font-bold">Skills</h2>
-            <div className="md:grid md:grid-cols-3"></div>
+      <div
+        id="skills"
+        className=" h-[40rem] bg-zinc-800 relative text-zinc-200"
+      >
+        <section className="absolute top-0 left-0 right-0 h-[10rem]  bg-gradient-to-b from-zinc-900  to-zinc-800 " />
+        <section className=" relative p-8 flex justify-center md:justify-start ">
+          <div className="m-[5rem] md:m-[10rem] w-full">
+            <div className="p-4 w-fit">
+              <h2 className="text-3xl md:text-5xl font-bold px-3 py-2">
+                Skills
+              </h2>
+              <div className="h-[5px] rounded-lg bg-gradient-to-r from-orange-500 to-orange-800" />
+            </div>
+
+            <div className="flex flex-col md:grid md:grid-cols-3 p-8 space-x-10">
+              <div className="flex flex-row">
+                <CodeBracketIcon className="w-16 my-auto text-orange-700" />
+                <div className="px-8">
+                  <div className="col-span-3 text-2xl font-bold">Front End</div>
+                  <div className="flex flex-wrap space-x-4 space-y-3">
+                    {frontEndSkills.map(skill => {
+                      return(
+                        <div className="bg-zinc-700 bg-opacity-60 rounded-2xl p-2">{skill}</div>
+                      )
+                    })}
+                  </div>
+                </div>
+              </div>
+              <div className="flex flex-row">
+                <ComputerDesktopIcon className="w-16 my-auto text-orange-700" />
+                <div className="px-8">
+                  <div className="col-span-3 text-2xl font-bold">Back End</div>
+                </div>
+              </div>
+              <div className="flex flex-row">
+                <CommandLineIcon className="w-16 my-auto text-orange-700" />
+                <div className="px-8">
+                  <div className="col-span-3 text-2xl font-bold">Languages</div>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
       </div>
