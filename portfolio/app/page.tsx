@@ -80,27 +80,27 @@ export default function Page() {
       </div>
       <div
         id="skills"
-        className=" h-[40rem] bg-zinc-800 relative text-zinc-200"
+        className=" h-[50rem] bg-zinc-800 relative text-zinc-200"
       >
         <section className="absolute top-0 left-0 right-0 h-[10rem]  bg-gradient-to-b from-zinc-900  to-zinc-800 " />
         <section className=" relative p-8 flex justify-center md:justify-start ">
-          <div className="m-[5rem] md:m-[10rem] w-full">
-            <div className="p-4 w-fit">
+          <div className=" ">
+            <div className="p-4 w-fit mt-[5rem] ml-[5rem]">
               <h2 className="text-3xl md:text-5xl font-bold px-3 py-2">
                 Skills
               </h2>
               <div className="h-[5px] rounded-lg bg-gradient-to-r from-orange-500 to-orange-800" />
             </div>
 
-            <div className="flex flex-col md:grid md:grid-cols-3 p-8 space-x-10">
+            <div className="flex flex-col md:grid md:grid-cols-2 lg:grid-cols-3 p-8 ">
               <div className="flex flex-row">
-                <CodeBracketIcon className="w-16 my-auto text-orange-700" />
-                <div className="px-8">
-                  <div className="col-span-3 text-2xl font-bold">Front End</div>
-                  <div className="flex flex-wrap space-x-4 space-y-3">
+                <CodeBracketIcon className="w-16 text-orange-700" />
+                <div className="px-8 m-4">
+                  <div className="col-span-3 text-2xl font-bold mx-2">Front End</div>
+                  <div className="flex flex-wrap ">
                     {frontEndSkills.map(skill => {
                       return(
-                        <div className="bg-zinc-700 bg-opacity-60 rounded-2xl p-2">{skill}</div>
+                        <div className="bg-zinc-700 bg-opacity-60 rounded-2xl p-2 text-sm m-2 text-zinc-400">{skill}</div>
                       )
                     })}
                   </div>
@@ -108,14 +108,25 @@ export default function Page() {
               </div>
               <div className="flex flex-row">
                 <ComputerDesktopIcon className="w-16 my-auto text-orange-700" />
-                <div className="px-8">
-                  <div className="col-span-3 text-2xl font-bold">Back End</div>
+                <div className="px-8 m-4">
+                  <div className="col-span-3 text-2xl font-bold mx-2">Back End</div>
+                  <div className="flex flex-wrap
+                  "> {backEndSkills.map(skill => {
+                      return(
+                        <div className="bg-zinc-700 bg-opacity-60 rounded-2xl p-2 text-sm m-2 text-zinc-400">{skill}</div>
+                      )
+                    })}</div>
                 </div>
               </div>
               <div className="flex flex-row">
                 <CommandLineIcon className="w-16 my-auto text-orange-700" />
-                <div className="px-8">
-                  <div className="col-span-3 text-2xl font-bold">Languages</div>
+                <div className="px-8 m-4">
+                  <div className="col-span-3 text-2xl font-bold mx-2">Languages</div>
+                  <div className="flex flex-wrap">{languages.map(language => {
+                    return(<div className="bg-zinc-700 bg-opacity-60 rounded-2xl text-sm m-2 p-2 text-zinc-300">
+                      {language}
+                    </div>)
+                  })}</div>
                 </div>
               </div>
             </div>
