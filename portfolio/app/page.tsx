@@ -80,7 +80,7 @@ export default function Page() {
       </div>
       <div
         id="skills"
-        className=" h-[50rem] bg-zinc-800 relative text-zinc-200"
+        className=" h-fit bg-zinc-800 relative text-zinc-200"
       >
         <section className="absolute top-0 left-0 right-0 h-[10rem]  bg-gradient-to-b from-zinc-900  to-zinc-800 " />
         <section className=" relative p-8 flex justify-center md:justify-start ">
@@ -107,7 +107,7 @@ export default function Page() {
                 </div>
               </div>
               <div className="flex flex-row">
-                <ComputerDesktopIcon className="w-16 my-auto text-orange-700" />
+                <ComputerDesktopIcon className="w-16  text-orange-700" />
                 <div className="px-8 m-4">
                   <div className="col-span-3 text-2xl font-bold mx-2">Back End</div>
                   <div className="flex flex-wrap
@@ -119,7 +119,7 @@ export default function Page() {
                 </div>
               </div>
               <div className="flex flex-row">
-                <CommandLineIcon className="w-16 my-auto text-orange-700" />
+                <CommandLineIcon className="w-16  text-orange-700" />
                 <div className="px-8 m-4">
                   <div className="col-span-3 text-2xl font-bold mx-2">Languages</div>
                   <div className="flex flex-wrap">{languages.map(language => {
