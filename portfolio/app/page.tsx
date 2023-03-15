@@ -4,10 +4,14 @@ import { ScrollReveal } from "reveal-on-scroll-react";
 import Image from "next/image";
 import { useRef, useEffect } from "react";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
-import {frontEndSkills,backEndSkills,languages} from '../information/skills'
+import {
+  frontEndSkills,
+  backEndSkills,
+  languages,
+} from "../information/skills";
 import {
   CommandLineIcon,
-  ComputerDesktopIcon,
+  WrenchIcon,
   CodeBracketIcon,
 } from "@heroicons/react/24/outline";
 import Typed from "typed.js";
@@ -20,6 +24,7 @@ export default function Page() {
       strings: [
         "I am a Frontend Developer",
         "I am a Software Engineer",
+        "I am a React Programmer",
         "I am a Barbell Squat Enthusiast",
       ],
       typeSpeed: 75,
@@ -58,12 +63,12 @@ export default function Page() {
             >
               <AiFillGithub className="w-10 h-10 text-zinc-200 hover:text-zinc-400 transition-all" />
             </a>
-            <a>
-              <AiFillLinkedin
-                className="w-10 h-10  transition-all duration-200 text-zinc-200  hover:text-zinc-400 "
-                href="https://www.linkedin.com/in/jared-tucker-00ba74250/"
-                target={"_blank"}
-              />
+            <a
+              className="cursor-pointer"
+              href="https://www.linkedin.com/in/jared-tucker-00ba74250/"
+              target={"_blank"}
+            >
+              <AiFillLinkedin className="w-10 h-10  transition-all duration-200 text-zinc-200  hover:text-zinc-400 " />
             </a>
             <a href="/contact" className="group">
               <p className="text-zinc-200 text-xl  lg:text-2xl font-bold hover:text-zinc-400  transition-all duration-[600ms]">
@@ -78,10 +83,7 @@ export default function Page() {
           </div>
         </div>
       </div>
-      <div
-        id="skills"
-        className=" h-fit bg-zinc-800 relative text-zinc-200"
-      >
+      <div id="skills" className=" h-fit bg-zinc-800 relative text-zinc-200">
         <section className="absolute top-0 left-0 right-0 h-[10rem]  bg-gradient-to-b from-zinc-900  to-zinc-800 " />
         <section className=" relative p-8 flex justify-center md:justify-start ">
           <div className=" ">
@@ -92,41 +94,65 @@ export default function Page() {
               <div className="h-[5px] rounded-lg bg-gradient-to-r from-orange-500 to-orange-800" />
             </div>
 
-            <div className="flex flex-col md:grid md:grid-cols-2 lg:grid-cols-3 p-8 ">
+            <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 p-8 ">
               <div className="flex flex-row">
                 <CodeBracketIcon className="w-16 text-orange-700" />
                 <div className="px-8 m-4">
-                  <div className="col-span-3 text-2xl font-bold mx-2">Front End</div>
+                  <div className="col-span-3 text-2xl font-bold mx-2">
+                    Front End
+                  </div>
                   <div className="flex flex-wrap ">
-                    {frontEndSkills.map(skill => {
-                      return(
-                        <div key={skill} className="bg-zinc-700 bg-opacity-60 rounded-2xl p-2 text-sm m-2 text-zinc-400">{skill}</div>
-                      )
+                    {frontEndSkills.map((skill) => {
+                      return (
+                        <div
+                          key={skill}
+                          className="bg-zinc-700 bg-opacity-60 rounded-2xl p-2 text-sm m-2 text-zinc-400"
+                        >
+                          {skill}
+                        </div>
+                      );
                     })}
                   </div>
                 </div>
               </div>
               <div className="flex flex-row">
-                <ComputerDesktopIcon className="w-16  text-orange-700" />
+                <WrenchIcon className="w-1/12 md:w-16 text-orange-700" />
                 <div className="px-8 m-4">
-                  <div className="col-span-3 text-2xl font-bold mx-2">Back End</div>
-                  <div className="flex flex-wrap
-                  "> {backEndSkills.map(skill => {
-                      return(
-                        <div key={skill} className="bg-zinc-700 bg-opacity-60 rounded-2xl p-2 text-sm m-2 text-zinc-400">{skill}</div>
-                      )
-                    })}</div>
+                  <div className="col-span-3 text-2xl font-bold mx-2">
+                    Back end 
+                  </div>
+                  <div className="flex flex-wrap ">
+                    {backEndSkills.map((skill) => {
+                      return (
+                        <div
+                          key={skill}
+                          className="bg-zinc-700 bg-opacity-60 rounded-2xl p-2 text-sm m-2 text-zinc-400"
+                        >
+                          {skill}
+                        </div>
+                      );
+                    })}
+                  </div>
                 </div>
               </div>
               <div className="flex flex-row">
                 <CommandLineIcon className="w-16  text-orange-700" />
                 <div className="px-8 m-4">
-                  <div className="col-span-3 text-2xl font-bold mx-2">Languages</div>
-                  <div className="flex flex-wrap">{languages.map(language => {
-                    return(<div key={language} className="bg-zinc-700 bg-opacity-60 rounded-2xl text-sm m-2 p-2 text-zinc-300">
-                      {language}
-                    </div>)
-                  })}</div>
+                  <div className="col-span-3 text-2xl font-bold mx-2">
+                    Languages
+                  </div>
+                  <div className="flex flex-wrap">
+                    {languages.map((language) => {
+                      return (
+                        <div
+                          key={language}
+                          className="bg-zinc-700 bg-opacity-60 rounded-2xl text-sm m-2 p-2 text-zinc-300"
+                        >
+                          {language}
+                        </div>
+                      );
+                    })}
+                  </div>
                 </div>
               </div>
             </div>
