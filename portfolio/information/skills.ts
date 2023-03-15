@@ -7,7 +7,7 @@ export const frontEndSkills = [
   "HTML",
   "CSS",
 ];
-export const backEndSkills = ["Node", "Express", "MongoDB"];
+export const backEndSkills = ["NodeJS", "Express", "MongoDB", 'FastAPI',];
 export const languages = [
   "Typescript",
   "Javascript",
