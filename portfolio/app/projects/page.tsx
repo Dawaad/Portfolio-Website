@@ -32,7 +32,7 @@ function ProjectsPage() {
                   <div className="text-zinc-400 text-sm truncate-1-lines">
                     {item.memo}
                   </div>
-                  <h2 className="text-zinc-200 text-3xl lg:text-4xl  font-bold truncate-1-lines pb-2">
+                  <h2 className="text-zinc-200 text-2xl md:text-3xl lg:text-4xl  font-bold truncate-1-lines pb-2">
                     {item.title}
                   </h2>
                 </div>
