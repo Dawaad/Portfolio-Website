@@ -5,6 +5,7 @@ import Image from "next/image";
 import { useRef, useEffect } from "react";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import monitorIcon from '../public/monitor.svg'
+
 import {
   frontEndSkills,
   backEndSkills,
@@ -16,6 +17,7 @@ import {
   CodeBracketIcon,
 } from "@heroicons/react/24/outline";
 import Typed from "typed.js";
+import AnimatedHorizontalPage from "./AnimatedHorizontalPage";
 
 export default function Page() {
   const typeWriterRef = useRef(null);
@@ -38,7 +40,7 @@ export default function Page() {
     };
   }, []);
   return (
-    <>
+    <AnimatedHorizontalPage>
       <div id="landing" className="flex justify-center items-center h-[40rem]">
         <div className="w-full  h-[15rem] p-4 m-4 md:grid md:grid-cols-2">
           <div className=" items-center flex justify-center md:justify-end">
@@ -168,6 +170,6 @@ export default function Page() {
           </div>
         </section>
       </div>
-    </>
+    </AnimatedHorizontalPage>
   );
 }
