@@ -54,7 +54,7 @@ export default function Page() {
               </div>
             </div>
           </div>
-          <div>{/* Some random mf cool ass svg here please */}</div>
+          <div></div>
           <div className="flex items-center justify-center lg:justify-end space-x-6 mr-10 lg:mr-20 my-5 md:my-0 h-[8rem]">
             <a
               className="cursor-pointer"
@@ -96,7 +96,7 @@ export default function Page() {
 
             <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 p-4 md:p-8 ">
               <div className="flex flex-row">
-                <CodeBracketIcon className="hidden md:w-16 text-orange-700" />
+                <CodeBracketIcon className="hidden md:w-16 md:block text-orange-700" />
                 <div className="px-8 m-4">
                   <div className="col-span-3 text-2xl font-bold mx-2">
                     Front End
@@ -116,10 +116,10 @@ export default function Page() {
                 </div>
               </div>
               <div className="flex flex-row">
-                <WrenchIcon className="hidden md:w-16 text-orange-700" />
+                <WrenchIcon className="hidden md:block md:w-16 text-orange-700" />
                 <div className="px-8 m-4">
                   <div className="col-span-3 text-2xl font-bold mx-2">
-                    Back end 
+                    Back end
                   </div>
                   <div className="flex flex-wrap ">
                     {backEndSkills.map((skill) => {
@@ -136,7 +136,7 @@ export default function Page() {
                 </div>
               </div>
               <div className="flex flex-row">
-                <CommandLineIcon className="hidden md:w-16  text-orange-700" />
+                <CommandLineIcon className="hidden md:block md:w-16  text-orange-700" />
                 <div className="px-8 m-4">
                   <div className="col-span-3 text-2xl font-bold mx-2">
                     Languages
@@ -146,7 +146,7 @@ export default function Page() {
                       return (
                         <div
                           key={language}
-                          className="bg-zinc-700 bg-opacity-60 rounded-2xl text-sm m-2 p-2 text-zinc-300"
+                          className="bg-zinc-700 bg-opacity-60 rounded-2xl text-zinc-400 text-sm m-2 p-2 "
                         >
                           {language}
                         </div>
