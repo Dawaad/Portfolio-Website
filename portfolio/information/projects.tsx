@@ -10,6 +10,9 @@ import {
 } from "react-icons/si";
 import Image from "next/image";
 import flexTaskSVG from "../public/Project Icons/flextask.svg";
+import spotifyRedesignSVG from "../public/Project Icons/spotify.svg";
+import graphVisualiserSVG from "../public/Project Icons/graphvisualiser.svg";
+import froggerSVG from "../public/Project Icons/frogger.svg";
 
 import { IconType } from "react-icons";
 import { ImageProps } from "next/image";
@@ -42,7 +45,7 @@ export const projectOverview: projectOverview[] = [
     title: "Spotify Redesign",
     memo: "A fully functional Spotify clone with a modern design",
     logo: {
-      src: flexTaskSVG,
+      src: spotifyRedesignSVG,
       alt: "Spotify Redesign Icon",
     },
   },
@@ -50,7 +53,7 @@ export const projectOverview: projectOverview[] = [
     title: "Graph Visualiser",
     memo: "A visualisation tool for Graphs and its algorithms",
     logo: {
-      src: flexTaskSVG,
+      src: graphVisualiserSVG,
       alt: "Graph Visualiser Icon",
     },
   },
@@ -58,7 +61,7 @@ export const projectOverview: projectOverview[] = [
     title: "Frogger",
     memo: "A Frogger inspired game built through Obvservables",
     logo: {
-      src: flexTaskSVG,
+      src: froggerSVG,
       alt: "Frogger Icon",
     },
   },

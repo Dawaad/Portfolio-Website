@@ -5,10 +5,10 @@ import Image from "next/image";
 
 import { projectOverview } from "../../information/projects";
 import Link from "next/link";
-// import AnimatedVerticalPage from "../AnimatedVerticalPage";
+import AnimatedVerticalPage from "../AnimatedVerticalPage";
 function ProjectsPage() {
   return (
-    // <AnimatedVerticalPage>
+    <AnimatedVerticalPage>
     <div className="h-[50rem] ">
       <div className="m-[2rem] mt-[2rem] md:mx-[7rem]  md:mt-[5rem] text-zinc-200">
         <div className="w-fit mb-4">
@@ -42,7 +42,7 @@ function ProjectsPage() {
         </section>
       </div>
     </div>
-    // </AnimatedVerticalPage>
+    </AnimatedVerticalPage>
   );
 }
 
