@@ -25,13 +25,13 @@ function page() {
   };
   return (
     <div className="h-[50rem] lg:grid lg:grid-cols-2">
-      <div className="ml-[2rem] mt-[2rem]  border-white md:ml-[7rem] md:mt-[5rem] text-zinc-200">
+      <div className="m-[2rem] mt-[2rem]  border-white md:ml-[7rem] md:mr-[4rem] lg:mr-0 md:mt-[5rem] text-zinc-200">
         <div className="w-fit">
           <h1 className="text-5xl font-bold">Get in Touch</h1>
           <div className="h-[5px] rounded-lg mt-[1rem] bg-gradient-to-r from-orange-600 via-orange-800 w-11/12" />
         </div>
-        <form onSubmit={sendEmail} className="p-4 w">
-          <div className="flex justify-start space-x-4 ">
+        <form onSubmit={sendEmail} className="p-4 w-full">
+          <div className="flex flex-col md:flex-row ">
             <div className="grid p-4 w-full">
               <label className="font-semibold text-lg my-2 text-zinc-400">
                 First Name
@@ -43,7 +43,7 @@ function page() {
                 name="user_first_name"
               />
             </div>
-            <div className="grid p-4 w-full">
+            <div className="grid p-4 w-full ">
               <label className="font-semibold text-lg my-2 text-zinc-400">
                 Last Name
               </label>
@@ -76,7 +76,7 @@ function page() {
               name="message"
             />
           </div>
-          <div className="p-4">
+          <div className="p-4 flex justify-center md:justify-start">
             <button
               type="submit"
               className="flex items-center  py-2 px-3 bg-orange-800 rounded-md transition-all hover:scale-105 hover:bg-orange-900"
