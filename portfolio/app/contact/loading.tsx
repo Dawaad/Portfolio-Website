@@ -1,11 +1,11 @@
-import React from 'react'
+import React from "react";
 
 function loading() {
   return (
-    <div>
-      
-    </div>
-  )
+    <div className="flex justify-center items-center">
+    
+  </div>
+  );
 }
 
-export default loading
+export default loading;
