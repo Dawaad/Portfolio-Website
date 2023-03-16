@@ -1,11 +1,12 @@
-import React from 'react'
+import React from "react";
 
 function loading() {
   return (
-    <div>
-      
-    </div>
-  )
+    <>
+      <title>Loading</title>
+      <div></div>
+    </>
+  );
 }
 
-export default loading
+export default loading;
