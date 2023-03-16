@@ -4,6 +4,7 @@ import { ScrollReveal } from "reveal-on-scroll-react";
 import Image from "next/image";
 import { useRef, useEffect } from "react";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
+import monitorIcon from '../public/monitor.svg'
 import {
   frontEndSkills,
   backEndSkills,
@@ -54,7 +55,15 @@ export default function Page() {
               </div>
             </div>
           </div>
-          <div></div>
+          <div className=" justify-center items-center hidden md:flex -rotate-2">
+            <Image
+            src = {monitorIcon}
+            alt = 'Monitor Icon'
+            width = {500}
+            height = {500}
+            
+            />
+          </div>
           <div className="flex items-center justify-center lg:justify-end space-x-6 mr-10 lg:mr-20 my-5 md:my-0 h-[8rem]">
             <a
               className="cursor-pointer"
@@ -91,7 +100,7 @@ export default function Page() {
               <h2 className="text-3xl md:text-5xl font-bold px-3 py-2">
                 Skills
               </h2>
-              <div className="h-[5px] rounded-lg bg-gradient-to-r from-orange-500 to-orange-800" />
+              <div className="h-[5px] rounded-lg bg-gradient-to-r from-orange-500 to-orange-800 " />
             </ScrollReveal.div>
 
             <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 p-4 md:p-8 ">

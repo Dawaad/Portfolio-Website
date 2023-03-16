@@ -2,6 +2,9 @@
 import React from "react";
 import emailjs from "@emailjs/browser";
 import { PaperAirplaneIcon } from "@heroicons/react/24/outline";
+import emailDark from "../../public/emailDarkMode.svg";
+import emailLight from '../../public/emailLightMode.svg'
+import Image from "next/image";
 function page() {
   const sendEmail = (e: any) => {
     e.preventDefault();
@@ -87,7 +90,15 @@ function page() {
           </div>
         </form>
       </div>
-      <div>{/* {Cool mf svg} */}</div>
+      <div className="flex justify-center items-center">
+        <Image
+        src={emailDark}
+        alt="email illustration"
+        width = {500}
+        height ={500}
+        
+        />
+      </div>
     </div>
   );
 }
