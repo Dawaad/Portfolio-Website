@@ -19,6 +19,7 @@ function ProjectsPage() {
           {projectOverview.map((item, index) => {
             return (
               <Link
+                key={item.title}
                 href={`/projects/${item.title}`}
                 className="grid grid-cols-3 rounded-lg bg-opacity-40 bg-zinc-700 m-4 p-4 transition-all hover:scale-[1.02] hover:bg-zinc-600 hover:bg-opacity-50"
               >
