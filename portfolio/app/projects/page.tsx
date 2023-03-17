@@ -20,7 +20,8 @@ function ProjectsPage() {
             {projectOverview.map((item, index) => {
               return (
                 <motion.div
-                
+                  layout={true}
+                  transition={{ duration: 0.1 }}
                   key={item.title}
                   onClick={() => {
                     setSelectedID(item.title);
@@ -47,25 +48,23 @@ function ProjectsPage() {
           </section>
         </div>
         <AnimatePresence>
-          <div
-            className={`${
-              !selectedID ? "hidden" : ""
-            } absolute top-0 bottom-0 left-0 right-0 flex justify-center items-center  `}
-          >
-            {selectedID && (
+          {selectedID && (
+            <motion.div
+              className={`absolute top-0 bottom-0 left-0 right-0 flex justify-center items-center  `}
+            >
               <motion.div
+               
                 layoutId={selectedID}
-              
-                animate={{ scale: 1 }}
-                
+                animate={{ scale: 1, opacity: 1 }}
+                exit={{ scale: 0.5, opacity: 0 }}
                 className="w-[70rem] h-[40rem] bg-zinc-800 rounded-lg"
               >
                 <div className="h-[5rem] border-b flex items-center justify-end">
                   <div onClick={() => setSelectedID(null)}>close</div>
                 </div>
               </motion.div>
-            )}
-          </div>
+            </motion.div>
+          )}
         </AnimatePresence>
       </div>
     </AnimatedVerticalPage>
