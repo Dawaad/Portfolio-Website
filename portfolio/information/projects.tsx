@@ -7,7 +7,10 @@ import {
   SiTailwindcss,
   SiHtml5,
   SiCss3,
+  SiDevpost,
+  SiGithub,
 } from "react-icons/si";
+import { RxEnter } from "react-icons/rx";
 import Image from "next/image";
 import flexTaskSVG from "../public/Project Icons/flextask.svg";
 import spotifyRedesignSVG from "../public/Project Icons/spotify.svg";
@@ -16,14 +19,18 @@ import froggerSVG from "../public/Project Icons/frogger.svg";
 
 import { IconType } from "react-icons";
 import { ImageProps } from "next/image";
+import { ReactNode } from "react";
 
-interface singularProject {
+interface ProjectDetail {
   title: string;
-  memo: string;
   description: string;
-  images: string[];
-  logo: string;
-  techStack: IconType[];
+  images: ImageProps[];
+  techStack: ReactNode[];
+  links: {
+    name: string;
+    icon: ReactNode;
+    link: string;
+  }[];
 }
 
 interface projectOverview {
@@ -67,10 +74,10 @@ export const projectOverview: projectOverview[] = [
   },
 ];
 
-export const projects = [
+export const projects: ProjectDetail[] = [
   {
     title: "FlexTask",
-    memo: "AI Powered Task Management System",
+
     description:
       "One of the trickiest aspects of project task management, be that for work, school or leisure is breaking it down into manageable chunks. It’s often common to be completely overloaded with ideas, but no feasible first steps on how to start working on them.\n Flextask is an AI powered time management app that will help you manage your project by breaking it down into more manageable tasks. We provide the user with an intuitive interface, prompting them for information about their project and generating the tasks with an OpenAI query.  ",
     images: [],
@@ -88,14 +95,17 @@ export const projects = [
     links: [
       {
         name: "Github",
+        icon: <SiGithub />,
         link: "https://github.com/Davit-G/barbell-squat-enthusiasts",
       },
       {
         name: "Website",
+        icon: <RxEnter />,
         link: "https://flextask.app/",
       },
       {
         name: "Devpost",
+        icon: <SiDevpost />,
         link: "https://devpost.com/software/quick-tasks",
       },
     ],
