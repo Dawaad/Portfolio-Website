@@ -17,9 +17,7 @@ import spotifyRedesignSVG from "../public/Project Icons/spotify.svg";
 import graphVisualiserSVG from "../public/Project Icons/graphvisualiser.svg";
 import froggerSVG from "../public/Project Icons/frogger.svg";
 
-import { FTImages } from "../public/Projects/FlexTask/FTImgExport";
-
-
+import { FTImages } from "./FTImgExport";
 
 import { IconType } from "react-icons";
 import { ImageProps } from "next/image";
@@ -87,7 +85,7 @@ export const projects: ProjectDetail[] = [
     images: FTImages,
 
     techStack: [
-      <SiReact />,
+      <SiReact className="w-10 h-10 " />,
       <SiFastapi />,
       <SiTypescript />,
       <SiJavascript />,

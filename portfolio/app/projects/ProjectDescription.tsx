@@ -26,7 +26,7 @@ function ProjectDescription({
         ease: "easeInOut",
         stiffness: 100,
       }}
-      className="w-10/12 h-[30rem] md:h-[40rem] bg-zinc-800 rounded-lg  shadow-2xl shadow-zinc-800 overflow-y-scroll overflow-x-hidden"
+      className="w-3/4 h-[30rem] md:h-[40rem] bg-zinc-800 rounded-lg  shadow-2xl shadow-zinc-800 overflow-y-scroll overflow-x-hidden"
     >
       <div className="h-[5rem]  flex justify-end items-center">
         <div className="px-8" onClick={() => setSelectedID(null)}>
@@ -36,27 +36,21 @@ function ProjectDescription({
       <div className="h-fit ">
         <SlideShow images={project?.images as ImageProps[]} />
       </div>
-      <div className="text-zinc-200 p-8 text-xs md:text-base">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia ad sequi
-        esse consequuntur fugiat corporis facilis soluta cupiditate similique.
-        Nulla alias labore, autem quaerat repellendus quasi dolorum voluptates
-        unde facere deserunt, temporibus nihil omnis vitae fugit, cum porro
-        cupiditate esse. Officia quisquam tempore, ex perferendis illum aliquam
-        iure rerum ratione inventore deserunt? Lorem ipsum dolor sit amet
-        consectetur adipisicing elit. Neque itaque eum deleniti doloremque ex
-        ullam pariatur? Eum eos officiis atque eligendi placeat id odit velit
-        beatae officia amet at, inventore, nemo alias a similique maiores? Nobis
-        consequatur perspiciatis natus repellendus quam eos doloremque
-        voluptatibus eius aperiam quas. Nostrum optio, aliquam voluptates at
-        repudiandae quas nihil nesciunt repellat quae? Animi non quaerat
-        expedita doloremque quia reiciendis laboriosam beatae ratione, laborum
-        maiores in provident minima, voluptatibus dolorum aut. Consectetur
-        nostrum officiis neque, delectus est sunt mollitia sint id provident,
-        quis enim itaque quam ea dolore aut vero nesciunt necessitatibus
-        repellendus sequi atque ipsum tenetur? Porro accusantium deleniti
-        dolorem tempore voluptates deserunt sint error, iste ex iusto
-        perspiciatis earum laborum impedit dolorum voluptatum nam temporibus
-        obcaecati praesentium dolor provident quod doloremque?
+      <div className="p-8">
+        <h1 className="text-4xl font-extrabold text-zinc-200 flex justify-center">
+          {project?.title}
+        </h1>
+        <div className="text-zinc-200 py-8 px-14 text-xs md:text-base">
+          {project?.description}
+        </div>
+        <div className="p-8">
+          <h2 className="text-3xl text-zinc-200 font-semibold">Tech Stack</h2>
+          <div className="flex space-x-5 p-4">
+            {project?.techStack.map((item) => {
+              return item;
+            })}
+          </div>
+        </div>
       </div>
     </motion.div>
   );

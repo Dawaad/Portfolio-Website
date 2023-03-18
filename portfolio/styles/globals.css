@@ -17,4 +17,9 @@
     -webkit-box-orient: vertical;
   }
 
+  @layer components {
+    .techStackIcon {
+      @apply h-10 w-10 
+    }
+  }
   

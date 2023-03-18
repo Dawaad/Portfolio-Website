@@ -45,7 +45,7 @@ export const SlideShow = ({ images }: { images: ImageProps[] }) => {
       <div className=" col-start-3 col-span-6 flex justify-center items-center">
         <Image
           {...images[imageIndex]}
-          className="pointer-events-none max-h-[25rem] max-w-[50rem]  object-cover rounded-lg"
+          className="  max-h-[25rem] max-w-[50rem]  object-fit rounded-lg"
           width={1000}
           height={1000}
         />
