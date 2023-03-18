@@ -1,45 +1,37 @@
 import { ImageProps } from "next/image";
 
-import FTCalendarView from 'public/calendarview.jpg'
-import FTHomepage from 'public/homepage.jpg'
-import FTNewProject from 'public/newproject.jpg'
-import FTLogin from 'public/login.jpg'
-import FTProjectInformation from 'public/projectinformation.jpg'
-import FTProjectPage from 'public/projectpage.jpg'
-import FTProjectView from 'public/projectview.jpg'
-import FTTodayTask from 'public/todaytask.jpg'
 
 export const FTImages: ImageProps[] = [
   {
-    src: FTCalendarView,
+    src: "/calendarview.jpg",
     alt: "FlexTask Calendar View",
   },
   {
-    src: FTHomepage,
+    src: "/homepage.jpg",
     alt: "FlexTask Homepage",
   },
   {
-    src: FTNewProject,
+    src: "/newproject.jpg",
     alt: "FlexTask New Project",
   },
   {
-    src: FTLogin,
+    src: "/login.jpg",
     alt: "FlexTask Login",
   },
   {
-    src: FTProjectInformation,
+    src: "/projectinformation.jpg",
     alt: "FlexTask Project Information",
   },
   {
-    src: FTProjectPage,
+    src: "/projectpage.jpg",
     alt: "FlexTask Project Page",
   },
   {
-    src: FTProjectView,
+    src: "/projectview.jpg",
     alt: "FlexTask Project View",
   },
   {
-    src: FTTodayTask,
+    src: "/todaytask.jpg",
     alt: "FlexTask Today Tasks",
   },
 ];
