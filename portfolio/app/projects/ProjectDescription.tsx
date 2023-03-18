@@ -48,7 +48,7 @@ function ProjectDescription({
           <h2 className="text-3xl text-zinc-200 font-semibold">Tech Stack</h2>
           <div className="flex space-x-5 p-4">
             {project?.techStack.map((item) => {
-              return item;
+              return <div key={item?.toString()}>{item}</div>;
             })}
           </div>
         </div>
