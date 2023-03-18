@@ -6,12 +6,16 @@ import { motion, AnimatePresence } from "framer-motion";
 import { projectOverview } from "../../information/projects";
 import Link from "next/link";
 import AnimatedVerticalPage from "../AnimatedVerticalPage";
+import { XCircleIcon } from "@heroicons/react/24/outline";
+import ProjectDescription from "./ProjectDescription";
 function ProjectsPage() {
   const [selectedID, setSelectedID] = useState<string | null>(null);
   return (
     <AnimatedVerticalPage>
       <div className={`h-[50rem] `}>
-        <div className="m-[2rem] mt-[2rem] md:mx-[7rem]  md:mt-[5rem] text-zinc-200">
+        <div
+          className={`m-[2rem] mt-[2rem] md:mx-[7rem]  md:mt-[5rem] text-zinc-200  `}
+        >
           <div className="w-fit mb-4">
             <h1 className="text-5xl font-bold">My Project Portfolio</h1>
             <div className="h-[5px] rounded-lg mt-[1rem] bg-gradient-to-r from-orange-600 via-orange-800 w-11/12" />
@@ -21,7 +25,7 @@ function ProjectsPage() {
               return (
                 <motion.div
                   layout={true}
-                  transition={{ duration: 0.1 }}
+                  transition={{ duration: 0.2 }}
                   key={item.title}
                   onClick={() => {
                     setSelectedID(item.title);
@@ -50,19 +54,10 @@ function ProjectsPage() {
         <AnimatePresence>
           {selectedID && (
             <motion.div
-              className={`absolute top-0 bottom-0 left-0 right-0 flex justify-center items-center  `}
+            onClick={() => setSelectedID(null)}
+              className={`fixed top-0 bottom-0 left-0 right-0 flex w-full h-full justify-center items-center  backdrop-blur-lg`}
             >
-              <motion.div
-               
-                layoutId={selectedID}
-                animate={{ scale: 1, opacity: 1 }}
-                exit={{ scale: 0.5, opacity: 0 }}
-                className="w-[70rem] h-[40rem] bg-zinc-800 rounded-lg"
-              >
-                <div className="h-[5rem] border-b flex items-center justify-end">
-                  <div onClick={() => setSelectedID(null)}>close</div>
-                </div>
-              </motion.div>
+             <ProjectDescription selectedID={selectedID} setSelectedID={setSelectedID}/>
             </motion.div>
           )}
         </AnimatePresence>
