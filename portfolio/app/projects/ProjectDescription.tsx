@@ -53,14 +53,21 @@ function ProjectDescription({
           </div>
         </div>
         <div className="p-8 flex sm:flex-col md:flex-row justify-center items-center md:justify-end  md:space-x-5">
-            {project?.links.map((item) => {
-              return(
-                <a href={item.link} target="_blank" className="flex  items-center  text-zinc-200">
-                  <div className="text-3xl lg:text-5xl m-2 md:m-4">{item.icon}</div>
-                  <div className="text-2xl">{item.name}</div>
-                </a>
-              )
-            })}
+          {project?.links.map((item) => {
+            return (
+              <a
+                key={item.name}
+                href={item.link}
+                target="_blank"
+                className="flex  items-center  text-zinc-200"
+              >
+                <div className="text-3xl lg:text-5xl m-2 md:m-4">
+                  {item.icon}
+                </div>
+                <div className="text-2xl">{item.name}</div>
+              </a>
+            );
+          })}
         </div>
       </div>
     </motion.div>
