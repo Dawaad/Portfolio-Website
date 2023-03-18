@@ -4,6 +4,7 @@ import { XCircleIcon } from "@heroicons/react/24/outline";
 import { projects } from "../../information/projects";
 import SlideShow from "./Slideshow";
 import { ImageProps } from "next/image";
+import { it } from "node:test";
 function ProjectDescription({
   selectedID,
   setSelectedID,
@@ -43,13 +44,23 @@ function ProjectDescription({
         <div className="text-zinc-200 py-8 px-4 md:px-14 text-xs md:text-base">
           {project?.description}
         </div>
-        <div className="p-8">
+        <div className="p-8 hidden md:block">
           <h2 className="text-3xl text-zinc-200 font-semibold">Tech Stack</h2>
           <div className="flex space-x-5 p-4">
             {project?.techStack.map((item) => {
               return item;
             })}
           </div>
+        </div>
+        <div className="p-8 flex sm:flex-col md:flex-row justify-center items-center md:justify-end  md:space-x-5">
+            {project?.links.map((item) => {
+              return(
+                <a href={item.link} target="_blank" className="flex  items-center  text-zinc-200">
+                  <div className="text-3xl lg:text-5xl m-2 md:m-4">{item.icon}</div>
+                  <div className="text-2xl">{item.name}</div>
+                </a>
+              )
+            })}
         </div>
       </div>
     </motion.div>
