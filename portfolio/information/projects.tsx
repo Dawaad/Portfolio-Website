@@ -86,7 +86,7 @@ export const projects: ProjectDetail[] = [
 
     techStack: [
       <SiReact className="w-10 h-10 " />,
-      <SiFastapi />,
+      <SiFastapi className="w-10 h-10" />,
       <SiTypescript />,
       <SiJavascript />,
       <SiNextdotjs />,

@@ -1,5 +1,5 @@
 import * as React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { wrap } from "popmotion";
 import { ImageProps } from "next/image";
@@ -28,31 +28,40 @@ export const SlideShow = ({ images }: { images: ImageProps[] }) => {
   // detect it as an entirely new image. So you can infinitely paginate as few as 1 images.
   const imageIndex = wrap(0, images.length, page);
 
+  useEffect(() => {
+    console.log(imageIndex);
+  }, [imageIndex]);
   const paginate = (newDirection: number) => {
     setPage([page + newDirection, newDirection]);
   };
 
   return (
-    <div className="w-full relative grid grid-cols-10 justify-center items-center">
-      <div className="flex items-center justify-center">
+    <div className="w-full relative flex justify-evenly items-center">
+      <div className="flex items-center justify-center p-4">
         <ArrowLeftCircleIcon
-          className="w-10 h-10 md:w-14 md:h-14 text-zinc-200 hover:text-zinc-400 transition-all duration-100"
+          className="w-8 h-8 md:w-14 md:h-14 text-zinc-200 hover:text-zinc-400 transition-all duration-100"
           onClick={() => {
             paginate(-1);
           }}
         />
       </div>
-      <div className=" col-start-3 col-span-6 flex justify-center items-center">
-        <Image
-          {...images[imageIndex]}
-          className="  max-h-[25rem] max-w-[50rem]  object-fit rounded-lg"
-          width={1000}
-          height={1000}
-        />
+      <div className=" flex justify-center items-center">
+        {images.map((image,index) => {
+          return(
+            <Image
+            key={index}
+            {...image}
+            className={` ${index === imageIndex? '':'hidden'} w-auto  object-fit rounded-lg`}
+            width={1000}
+            height={1000}
+          />
+          )
+        })}
+       
       </div>
-      <div className="col-start-10 flex items-center justify-center">
+      <div className=" flex items-center p-4 justify-center">
         <ArrowRightCircleIcon
-          className="w-10 h-10 md:w-14 md:h-14 text-zinc-200 hover:text-zinc-400 transition-all duration-100"
+          className="w-8 h-8 md:w-14 md:h-14 text-zinc-200 hover:text-zinc-400 transition-all duration-100"
           onClick={() => {
             paginate(1);
           }}

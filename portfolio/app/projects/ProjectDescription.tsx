@@ -30,7 +30,7 @@ function ProjectDescription({
     >
       <div className="h-[5rem]  flex justify-end items-center">
         <div className="px-8" onClick={() => setSelectedID(null)}>
-          <XCircleIcon className="w-10 h-10 text-zinc-400 hover:text-red-400 hover:scale-[1.1   ] transition-all duration-100" />
+          <XCircleIcon className="w-8 h-8 md:w-14 md:h-14 text-zinc-400 hover:text-red-400 hover:scale-[1.1   ] transition-all duration-100" />
         </div>
       </div>
       <div className="h-fit ">
@@ -40,7 +40,7 @@ function ProjectDescription({
         <h1 className="text-4xl font-extrabold text-zinc-200 flex justify-center">
           {project?.title}
         </h1>
-        <div className="text-zinc-200 py-8 px-14 text-xs md:text-base">
+        <div className="text-zinc-200 py-8 px-4 md:px-14 text-xs md:text-base">
           {project?.description}
         </div>
         <div className="p-8">
