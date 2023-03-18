@@ -4,7 +4,10 @@ import { motion, AnimatePresence } from "framer-motion";
 import { wrap } from "popmotion";
 import { ImageProps } from "next/image";
 import Image from "next/image";
-
+import {
+  ArrowRightCircleIcon,
+  ArrowLeftCircleIcon,
+} from "@heroicons/react/24/outline";
 /**
  * Experimenting with distilling swipe offset and velocity into a single variable, so the
  * less distance a user has swiped, the more velocity they need to register as a swipe.
@@ -30,25 +33,28 @@ export const SlideShow = ({ images }: { images: ImageProps[] }) => {
   };
 
   return (
-    <div className="w-full h-full relative justify-center items-center flex">
-      <div className="w-3/4">
-        <Image
-          {...images[imageIndex]}
-          className="pointer-events-none max-h-[30rem] object-cover rounded-lg"
+    <div className="w-full relative grid grid-cols-10 justify-center items-center">
+      <div className="flex items-center justify-center">
+        <ArrowLeftCircleIcon
+          className="w-10 h-10 md:w-14 md:h-14 text-zinc-200 hover:text-zinc-400 transition-all duration-100"
+          onClick={() => {
+            paginate(-1);
+          }}
         />
       </div>
-
-      <div
-        className="top-[50% - 20px] absolute bg-zinc-200 rounded-full w-[40px] h-[40px] flex justify-center items-center select-none cursor-pointer font-bold z-[2] left-[10px] -scale-100"
-        onClick={() => paginate(1)}
-      >
-        {"‣"}
+      <div className=" col-start-3 col-span-6 flex justify-center items-center">
+        <Image
+          {...images[imageIndex]}
+          className="pointer-events-none max-h-[25rem] max-w-[50rem] object-cover rounded-lg"
+        />
       </div>
-      <div
-        className="top-[50% - 20px] absolute bg-zinc-200 rounded-full w-[40px] h-[40px] flex justify-center items-center select-none cursor-pointer font-bold z-[2] right-[10px]"
-        onClick={() => paginate(-1)}
-      >
-        {"‣"}
+      <div className="col-start-10 flex items-center justify-center">
+        <ArrowRightCircleIcon
+          className="w-10 h-10 md:w-14 md:h-14 text-zinc-200 hover:text-zinc-400 transition-all duration-100"
+          onClick={() => {
+            paginate(1);
+          }}
+        />
       </div>
     </div>
   );

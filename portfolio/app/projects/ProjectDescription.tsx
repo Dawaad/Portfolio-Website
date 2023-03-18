@@ -28,7 +28,7 @@ function ProjectDescription({
       }}
       className="w-10/12 h-[30rem] md:h-[40rem] bg-zinc-800 rounded-lg  shadow-2xl shadow-zinc-800 overflow-y-scroll overflow-x-hidden"
     >
-      <div className="h-[5rem]  flex items-center justify-end ">
+      <div className="h-[5rem]  flex justify-end items-center">
         <div className="px-8" onClick={() => setSelectedID(null)}>
           <XCircleIcon className="w-10 h-10 text-zinc-400 hover:text-red-400 hover:scale-[1.1   ] transition-all duration-100" />
         </div>
