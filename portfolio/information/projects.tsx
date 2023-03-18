@@ -17,6 +17,10 @@ import spotifyRedesignSVG from "../public/Project Icons/spotify.svg";
 import graphVisualiserSVG from "../public/Project Icons/graphvisualiser.svg";
 import froggerSVG from "../public/Project Icons/frogger.svg";
 
+import { FTImages } from "../public/Projects/FlexTask/FTImgExport";
+
+
+
 import { IconType } from "react-icons";
 import { ImageProps } from "next/image";
 import { ReactNode } from "react";
@@ -80,7 +84,7 @@ export const projects: ProjectDetail[] = [
 
     description:
       "One of the trickiest aspects of project task management, be that for work, school or leisure is breaking it down into manageable chunks. It’s often common to be completely overloaded with ideas, but no feasible first steps on how to start working on them.\n Flextask is an AI powered time management app that will help you manage your project by breaking it down into more manageable tasks. We provide the user with an intuitive interface, prompting them for information about their project and generating the tasks with an OpenAI query.  ",
-    images: [],
+    images: FTImages,
 
     techStack: [
       <SiReact />,
