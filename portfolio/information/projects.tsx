@@ -76,6 +76,8 @@ export const projectOverview: projectOverview[] = [
   },
 ];
 
+const techStackIcon = "min-w-[20px] min-h-[20px] w-10 h-10";
+
 export const projects: ProjectDetail[] = [
   {
     title: "FlexTask",
@@ -85,14 +87,14 @@ export const projects: ProjectDetail[] = [
     images: FTImages,
 
     techStack: [
-      <SiReact className="w-10 h-10 " />,
-      <SiFastapi className="w-10 h-10" />,
-      <SiTypescript />,
-      <SiJavascript />,
-      <SiNextdotjs />,
-      <SiTailwindcss />,
-      <SiHtml5 />,
-      <SiCss3 />,
+      <SiReact className={`${techStackIcon}`} color={"#61DBFB"} />,
+      <SiFastapi className={`${techStackIcon}`} color={"#4ecc95"} />,
+      <SiTypescript className={`${techStackIcon}`} color={"#3780ed"} />,
+      <SiJavascript className={`${techStackIcon}`} color={"#edc937"} />,
+      <SiNextdotjs className={`${techStackIcon}`} />,
+      <SiTailwindcss className={`${techStackIcon}`} color={"#37d2ed"} />,
+      <SiHtml5 className={`${techStackIcon}`} color={"#ed5537"} />,
+      <SiCss3 className={`${techStackIcon}`} color={"#3789ed"} />,
     ],
     links: [
       {
