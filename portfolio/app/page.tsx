@@ -105,7 +105,7 @@ export default function Page() {
               <div className="h-[5px] rounded-lg bg-gradient-to-r from-orange-500 to-orange-800 " />
             </ScrollReveal.div>
 
-            <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 p-4 md:p-8 ">
+            <ScrollReveal.div animation="slide-in-left" className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 p-4 md:p-8 ">
               <div className="flex flex-row">
                 <CodeBracketIcon className="hidden md:w-16 md:block text-orange-700" />
                 <div className="px-8 m-4">
@@ -166,7 +166,7 @@ export default function Page() {
                   </div>
                 </div>
               </div>
-            </div>
+            </ScrollReveal.div>
           </div>
         </section>
       </div>
