@@ -18,7 +18,7 @@ import graphVisualiserSVG from "../public/Project Icons/graphvisualiser.svg";
 import froggerSVG from "../public/Project Icons/frogger.svg";
 
 import { FTImages } from "./FTImgExport";
-
+import { SpotifyImages } from "./SpotifyImgExport";
 import { IconType } from "react-icons";
 import { ImageProps } from "next/image";
 import { ReactNode } from "react";
@@ -111,6 +111,32 @@ export const projects: ProjectDetail[] = [
         name: "Devpost",
         icon: <SiDevpost />,
         link: "https://devpost.com/software/quick-tasks",
+      },
+    ],
+  },
+  {
+    title: "Spotify Redesign",
+    description:
+      "The Spotify Resdesign Project is an application using NextJS, nextAuth, TailwindCSS and uses the Spotify API, this application allows users to connect their spotify accounts and have complete control over the songs they are currently playing through any official Spotify Application. The application also lets users view their playlists and search for new Artists and Albums. This application is fully responsive with the use of TailwindCSS, allowing for user on all devices.",
+    images: SpotifyImages,
+    techStack: [
+      <SiReact className={`${techStackIcon}`} color={"#61DBFB"} />,
+      <SiTypescript className={`${techStackIcon}`} color={"#3780ed"} />,
+      <SiNextdotjs className={`${techStackIcon}`} />,
+      <SiTailwindcss className={`${techStackIcon}`} color={"#37d2ed"} />,
+      <SiHtml5 className={`${techStackIcon}`} color={"#ed5537"} />,
+      <SiCss3 className={`${techStackIcon}`} color={"#3789ed"} />,
+    ],
+    links: [
+      {
+        name: "Github",
+        icon: <SiGithub />,
+        link: "https://github.com/Dawaad/NextJS-Spotify-App",
+      },
+      {
+        name: "Website",
+        icon: <RxEnter />,
+        link: "https://nextjs-spotify-resdesign.vercel.app/",
       },
     ],
   },
