@@ -1,37 +1,36 @@
 import { ImageProps } from "next/image";
 
-
 export const FTImages: ImageProps[] = [
   {
-    src: "/images/calendarview.jpg",
+    src: "/images/Flextask/calendarview.jpg",
     alt: "FlexTask Calendar View",
   },
   {
-    src: "/images/homepage.jpg",
+    src: "/images/Flextask/homepage.jpg",
     alt: "FlexTask Homepage",
   },
   {
-    src: "/images/newproject.jpg",
+    src: "/images/Flextask/newproject.jpg",
     alt: "FlexTask New Project",
   },
   {
-    src: "/images/login.jpg",
+    src: "/images/Flextask/login.jpg",
     alt: "FlexTask Login",
   },
   {
-    src: "/images/projectinformation.jpg",
+    src: "/images/Flextask/projectinformation.jpg",
     alt: "FlexTask Project Information",
   },
   {
-    src: "/images/projectpage.jpg",
+    src: "/images/Flextask/projectpage.jpg",
     alt: "FlexTask Project Page",
   },
   {
-    src: "/images/projectview.jpg",
+    src: "/images/Flextask/projectview.jpg",
     alt: "FlexTask Project View",
   },
   {
-    src: "/images/todaytask.jpg",
+    src: "/images/Flextask/todaytask.jpg",
     alt: "FlexTask Today Tasks",
   },
 ];
