@@ -96,7 +96,7 @@ function page() {
             <div className="p-4 flex justify-center md:justify-start">
               <button
                 type="submit"
-                className="flex items-center  py-2 px-3 bg-orange-800 rounded-md transition-all hover:scale-105 hover:bg-orange-900"
+                className="flex items-center  py-2 px-3 bg-orange-800 rounded-md transition-all hover:scale-105 hover:bg-orange-900 shadow-sm shadow-black"
               >
                 <PaperAirplaneIcon className="h-5 w-5 text-zinc-300" />
                 <p className="text-zinc-300 mx-4 my-1 font-semibold">
