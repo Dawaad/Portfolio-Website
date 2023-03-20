@@ -41,7 +41,7 @@ function page() {
   return (
     <AnimatedHorizontalPage>
       <Toaster />
-      <div className="h-[50rem] lg:grid lg:grid-cols-2 ">
+      <div className="h-fit lg:grid lg:grid-cols-2 ">
         <div className="m-[2rem] mt-[2rem]   md:ml-[7rem] md:mr-[4rem] lg:mr-0 md:mt-[5rem] text-zinc-200">
           <div className="w-fit">
             <h1 className="text-5xl font-bold">Get in Touch</h1>
@@ -54,7 +54,7 @@ function page() {
                   First Name
                 </label>
                 <input
-                  className="bg-zinc-600 bg-opacity-40 text-zinc-200 rounded-sm p-2 outline-none focus:ring-2 ring-orange-800 border-b-orange-800 border-b-2 focus:border-b-transparent placeholder-zinc-600"
+                  className="shadow-md shadow-black bg-zinc-600 bg-opacity-40 text-zinc-200 rounded-sm p-2 outline-none focus:ring-2 ring-orange-800 border-b-orange-800 border-b-2 focus:border-b-transparent placeholder-zinc-600"
                   placeholder="First Name"
                   type="text"
                   name="user_first_name"
@@ -65,7 +65,7 @@ function page() {
                   Last Name
                 </label>
                 <input
-                  className="bg-zinc-600 bg-opacity-40 text-zinc-200 rounded-sm p-2 outline-none focus:ring-2 ring-orange-800 border-b-orange-800 border-b-2 focus:border-b-transparent placeholder-zinc-600  "
+                  className="shadow-md shadow-black bg-zinc-600 bg-opacity-40 text-zinc-200 rounded-sm p-2 outline-none focus:ring-2 ring-orange-800 border-b-orange-800 border-b-2 focus:border-b-transparent placeholder-zinc-600  "
                   placeholder="Last Name"
                   type="text"
                   name="user_last_name"
@@ -77,7 +77,7 @@ function page() {
                 Email
               </label>
               <input
-                className="bg-zinc-600 bg-opacity-40 text-zinc-200 rounded-sm p-2 outline-none focus:ring-2 ring-orange-800 border-b-orange-800 border-b-2 focus:border-b-transparent placeholder-zinc-600"
+                className="shadow-md shadow-black bg-zinc-600 bg-opacity-40 text-zinc-200 rounded-sm p-2 outline-none focus:ring-2 ring-orange-800 border-b-orange-800 border-b-2 focus:border-b-transparent placeholder-zinc-600"
                 placeholder="Email"
                 type="email"
                 name="user_email"
@@ -88,7 +88,7 @@ function page() {
                 Message
               </label>
               <textarea
-                className="bg-zinc-600 bg-opacity-40 text-zinc-200 rounded-sm p-2 outline-0 focus:ring-2 ring-orange-800 border-b-orange-800 border-b-2 focus:border-b-transparent placeholder-zinc-600 h-[15rem]"
+                className="shadow-md shadow-black bg-zinc-600 bg-opacity-40 text-zinc-200 rounded-sm p-2 outline-0 focus:ring-2 ring-orange-800 border-b-orange-800 border-b-2 focus:border-b-transparent placeholder-zinc-600 h-[15rem]"
                 placeholder="I want to hire you"
                 name="message"
               />
