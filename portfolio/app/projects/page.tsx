@@ -12,7 +12,7 @@ function ProjectsPage() {
   const [selectedID, setSelectedID] = useState<string | null>(null);
   return (
     <AnimatedVerticalPage>
-      <div className={`h-[50rem] `}>
+      <div className={`h-fit `}>
         <div
           className={`m-[2rem] mt-[2rem] md:mx-[7rem]  md:mt-[5rem] text-zinc-200  `}
         >
@@ -31,7 +31,7 @@ function ProjectsPage() {
                     setSelectedID(item.title);
                   }}
                   layoutId={item.title}
-                  className="grid grid-cols-3 rounded-lg bg-opacity-40 bg-zinc-800 m-4 p-4 transition-all hover:scale-[1.02] hover:bg-zinc-600 hover:bg-opacity-50"
+                  className="grid grid-cols-3 rounded-lg bg-opacity-40 bg-zinc-800 m-4 p-4 transition-all hover:scale-[1.02] hover:bg-zinc-600 hover:bg-opacity-50 shadow-lg shadow-black"
                 >
                   <div>
                     <div className="max-w-[200px] max-h-[200px] rounded-full bg-zinc-100 mx-4">

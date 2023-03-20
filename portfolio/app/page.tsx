@@ -57,15 +57,10 @@ export default function Page() {
               </div>
             </div>
           </div>
-          <div className=" justify-center items-center hidden md:flex -rotate-2">
-            <Image
-            src = {monitorIcon}
-            alt = 'Monitor Icon'
-            width = {500}
-            height = {500}
-            
-            />
+          <div>
+
           </div>
+        
           <div className="flex items-center justify-center lg:justify-end space-x-6 mr-10 lg:mr-20 my-5 md:my-0 h-[8rem]">
             <a
               className="cursor-pointer"
@@ -117,7 +112,7 @@ export default function Page() {
                       return (
                         <div
                           key={skill}
-                          className="bg-zinc-700 bg-opacity-60 rounded-2xl p-2 text-sm m-2 text-zinc-400"
+                          className="bg-zinc-700 bg-opacity-60 rounded-2xl p-2 text-sm m-2 text-zinc-400 shadow-md shadow-black"
                         >
                           {skill}
                         </div>
@@ -137,7 +132,7 @@ export default function Page() {
                       return (
                         <div
                           key={skill}
-                          className="bg-zinc-700 bg-opacity-60 rounded-2xl p-2 text-sm m-2 text-zinc-400"
+                          className="bg-zinc-700 bg-opacity-60 rounded-2xl p-2 text-sm m-2 text-zinc-400 shadow-md shadow-black"
                         >
                           {skill}
                         </div>
@@ -157,7 +152,7 @@ export default function Page() {
                       return (
                         <div
                           key={language}
-                          className="bg-zinc-700 bg-opacity-60 rounded-2xl text-zinc-400 text-sm m-2 p-2 "
+                          className="bg-zinc-700 bg-opacity-60 shadow-md shadow-black rounded-2xl text-zinc-400 text-sm m-2 p-2 "
                         >
                           {language}
                         </div>
