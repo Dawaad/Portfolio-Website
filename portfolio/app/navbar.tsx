@@ -8,7 +8,11 @@ function Navbar() {
 
   return (
     <>
-      <nav className={`bg-zinc-900 bg-opacity-70 h-[6rem] sticky top-0 left-0 right-0 grid grid-cols-4 text-zinc-200 z-40 ${sideBarOpen? 'opacity-0 ' :''}`}>
+      <nav
+        className={`bg-zinc-900 bg-opacity-70 h-[6rem] sticky top-0 left-0 right-0 grid grid-cols-4 text-zinc-200 z-40 ${
+          sideBarOpen ? "opacity-0 " : ""
+        }`}
+      >
         <Link
           href={"/"}
           id="nav-logo"
@@ -64,7 +68,7 @@ function Navbar() {
               <div className="border-b-2 border-b-zinc-600 dark:border-b-zinc-200 origin-right scale-0 group-hover:scale-100 transition-all duration-300"></div>
             </div>
           </Link>
-          
+
           <Link
             className="hover:scale-[1.2] text-zinc-400 hover:text-zinc-300 transition-all group"
             href={"/projects"}
@@ -73,16 +77,6 @@ function Navbar() {
             <div className="grid-cols-2 grid">
               <div className="border-b-2 border-b-zinc-600 dark:border-b-zinc-200 origin-left scale-0 group-hover:scale-100 transition-all duration-300"></div>
               <div className="border-b-2 border-b-zinc-600 dark:border-b-zinc-200 origin-right scale-0 group-hover:scale-100 transition-all duration-300"></div>
-            </div>
-          </Link>
-          <Link
-            className="hover:scale-[1.2] text-orange-600 hover:text-orange-500 transition-all group"
-            href={"/resume"}
-          >
-            <p>RESUME</p>
-            <div className="grid-cols-2 grid">
-              <div className="border-b-2 border-b-zinc-600 dark:border-b-orange-500 origin-left scale-0 group-hover:scale-100 transition-all duration-300"></div>
-              <div className="border-b-2 border-b-zinc-600 dark:border-b-orange-500 origin-right scale-0 group-hover:scale-100 transition-all duration-300"></div>
             </div>
           </Link>
 
@@ -140,7 +134,7 @@ function Navbar() {
               <div className="border-b-2 border-b-zinc-600 dark:border-b-blue-900 origin-right scale-0 group-hover:scale-100 transition-all duration-300"></div>
             </div>
           </Link>
-          
+
           <Link
             onClick={() => setSideBarOpen(false)}
             className="hover:scale-[1.2] text-zinc-900 hover:text-blue-900 transition-all group"
@@ -150,17 +144,6 @@ function Navbar() {
             <div className="grid-cols-2 grid">
               <div className="border-b-2 border-b-zinc-600 dark:border-b-blue-900 origin-left scale-0 group-hover:scale-100 transition-all duration-300"></div>
               <div className="border-b-2 border-b-zinc-600 dark:border-b-blue-900 origin-right scale-0 group-hover:scale-100 transition-all duration-300"></div>
-            </div>
-          </Link>
-          <Link
-            onClick={() => setSideBarOpen(false)}
-            className="hover:scale-[1.2] text-orange-600 hover:text-orange-500 transition-all group"
-            href={"/resume"}
-          >
-            <p>RESUME</p>
-            <div className="grid-cols-2 grid">
-              <div className="border-b-2 border-b-zinc-600 dark:border-b-orange-500 origin-left scale-0 group-hover:scale-100 transition-all duration-300"></div>
-              <div className="border-b-2 border-b-zinc-600 dark:border-b-orange-500 origin-right scale-0 group-hover:scale-100 transition-all duration-300"></div>
             </div>
           </Link>
 
