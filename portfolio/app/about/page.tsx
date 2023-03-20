@@ -13,9 +13,9 @@ function page() {
             <h1 className="text-5xl font-bold">About Me</h1>
             <div className="h-[5px] rounded-lg mt-[1rem] bg-gradient-to-r from-orange-600 via-orange-800 w-11/12" />
           </div>
-          <div className="p-8">
-            <section className="p-[2rem] md:px-[2rem] md:py-[3rem] h-fit  flex items-center bg-zinc-800 rounded-lg shadow-md shadow-black">
-              <div className="text-base md:text-xl font-semibold">
+          <div className="py-8 px-4">
+            <section className="p-[2rem] md:px-[2rem] md:py-[3rem] h-fit  flex items-center bg-zinc-800 rounded-lg  ">
+              <div className="text-base md:text-xl ">
                 As a Junior Front-End Developer, I possess an impressive array
                 of skills in HTML, CSS, JavaScript, React, Tailwind, TypeScript,
                 and Next.JS. My expertise lies in designing and maintaining
@@ -39,7 +39,7 @@ function page() {
             </section>
           </div>
         </div>
-        <div className=" justify-center items-center hidden lg:flex">
+        <div className=" justify-center items-center hidden lg:flex -translate-y-12">
           <Image
             src={monitorIcon}
             alt="email illustration"
