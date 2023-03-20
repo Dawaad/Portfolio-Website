@@ -46,20 +46,14 @@ export const SlideShow = ({ images }: { images: ImageProps[] }) => {
         />
       </div>
       <div className=" flex justify-center items-center">
-        {images.map((image, index) => {
-          return (
-            <Image
-              key={index}
-              {...image}
-              className={` ${
-                index === imageIndex ? "" : "hidden max-h-[10rem] aspect-[1/2]"
-              } w-auto   rounded-lg`}
-              width={700}
-              height={500}
-            
-            />
-          );
-        })}
+       <Image
+          {...images[imageIndex]}
+          className="rounded-lg object-cover"
+          
+          width={650}
+          height={500}
+
+       />
       </div>
       <div className=" flex items-center p-4 justify-center">
         <ArrowRightCircleIcon
