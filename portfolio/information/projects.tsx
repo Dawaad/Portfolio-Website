@@ -22,7 +22,8 @@ import { SpotifyImages } from "./SpotifyImgExport";
 import { IconType } from "react-icons";
 import { ImageProps } from "next/image";
 import { ReactNode } from "react";
-
+import { GraphImages } from "./DataVisualiserExport";
+import { FroggerImages } from "./FroggerExport";
 interface ProjectDetail {
   title: string;
   description: string;
@@ -137,6 +138,49 @@ export const projects: ProjectDetail[] = [
         name: "Website",
         icon: <RxEnter />,
         link: "https://nextjs-spotify-resdesign.vercel.app/",
+      },
+    ],
+  },
+  {
+    title: "Graph Visualiser",
+    description:
+      "The Data Structure Visualisation Project is an application built using ReactJS, TypeScript and TailwindCSS, using data structures and algorithms coded from scratch without the use of any external libaries to help display or traverse graphs. This application allows users to create their own graphs with vertices and directional weighted edges in order to run popular algorithms, currently including BFS, DFS and Dijkstras. The graph is fully interactive with users being able to move vertices around, with all edge positioning constantly updated to match the new coordinates to ensure a smooth viewing and user experience.",
+    images: GraphImages,
+    techStack: [
+      <SiReact className={`${techStackIcon}`} color={"#61DBFB"} />,
+      <SiTypescript className={`${techStackIcon}`} color={"#3780ed"} />,
+      <SiTailwindcss className={`${techStackIcon}`} color={"#37d2ed"} />,
+      <SiHtml5 className={`${techStackIcon}`} color={"#ed5537"} />,
+      <SiCss3 className={`${techStackIcon}`} color={"#3789ed"} />,
+    ],
+    links: [
+      {
+        name: "Github",
+        icon: <SiGithub />,
+        link: "https://github.com/Dawaad/data-structure-visualiser",
+      },
+      {
+        name: "Website",
+        icon: <RxEnter />,
+        link: "https://data-structure-visualiser.vercel.app/",
+      },
+    ],
+  },
+  {
+    title: "Frogger",
+    description:
+      "This Project is a Frogger inspired game built using RxJS Obvservables in order to provide seamless game updates in regards to user input, object movement, and collision between the player and the object. This was done entirely using Typescript",
+    images: FroggerImages,
+    techStack: [
+      <SiTypescript className={`${techStackIcon}`} color={"#3780ed"} />,
+      <SiHtml5 className={`${techStackIcon}`} color={"#ed5537"} />,
+      <SiCss3 className={`${techStackIcon}`} color={"#3789ed"} />,
+    ],
+    links: [
+      {
+        name: "Github",
+        icon: <SiGithub />,
+        link: "https://github.com/Dawaad/Frogger",
       },
     ],
   },
