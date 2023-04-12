@@ -9,7 +9,7 @@ function Navbar() {
   return (
     <>
       <nav
-        className={`bg-zinc-900 bg-opacity-70 h-[6rem] sticky top-0 left-0 right-0 grid grid-cols-4 text-zinc-200 z-40 ${
+        className={`bg-zinc-900  bg-opacity-70 h-[6rem] sticky top-0 left-0 right-0 grid grid-cols-4 text-zinc-200 z-40 ${
           sideBarOpen ? "opacity-0 " : ""
         }`}
       >
@@ -47,22 +47,12 @@ function Navbar() {
             })}
           </div>
         </Link>
-        <div className="hidden col-span-3 md:flex items-center justify-end space-x-4 lg:space-x-6 mr-[4rem] font-semibold">
+        <div className="hidden col-span-3 md:flex items-center justify-end space-x-4 lg:space-x-6 mr-[4rem] font-semibold text-lg">
           <Link
             className="hover:scale-[1.2] text-zinc-400 hover:text-zinc-300 transition-all group"
             href={"/"}
           >
             <p>HOME</p>
-            <div className="grid-cols-2 grid">
-              <div className="border-b-2 border-b-zinc-600 dark:border-b-zinc-200 origin-left scale-0 group-hover:scale-100 transition-all duration-300"></div>
-              <div className="border-b-2 border-b-zinc-600 dark:border-b-zinc-200 origin-right scale-0 group-hover:scale-100 transition-all duration-300"></div>
-            </div>
-          </Link>
-          <Link
-            className="hover:scale-[1.2] text-zinc-400 hover:text-zinc-300 transition-all group"
-            href={"/about"}
-          >
-            <p>ABOUT ME</p>
             <div className="grid-cols-2 grid">
               <div className="border-b-2 border-b-zinc-600 dark:border-b-zinc-200 origin-left scale-0 group-hover:scale-100 transition-all duration-300"></div>
               <div className="border-b-2 border-b-zinc-600 dark:border-b-zinc-200 origin-right scale-0 group-hover:scale-100 transition-all duration-300"></div>
@@ -111,7 +101,7 @@ function Navbar() {
             />
           </div>
         </div>
-        <div className="h-[40rem] flex flex-col justify-center items-center text-2xl font-bold space-y-8">
+        <div className="h-[40rem] flex flex-col justify-center items-center text-3xl font-bold space-y-8">
           <Link
             onClick={() => setSideBarOpen(false)}
             className="hover:scale-[1.2] text-zinc-900 hover:text-blue-900 transition-all group"
@@ -121,17 +111,6 @@ function Navbar() {
             <div className="grid-cols-2 grid">
               <div className="border-b-2 border-b-blue-900 origin-left scale-0 group-hover:scale-100 transition-all duration-300"></div>
               <div className="border-b-2 border-b-blue-900 origin-right scale-0 group-hover:scale-100 transition-all duration-300"></div>
-            </div>
-          </Link>
-          <Link
-            onClick={() => setSideBarOpen(false)}
-            className="hover:scale-[1.2] text-zinc-900 hover:text-blue-900 transition-all group"
-            href={"/about"}
-          >
-            <p>ABOUT ME</p>
-            <div className="grid-cols-2 grid">
-              <div className="border-b-2 border-b-zinc-600 dark:border-b-blue-900 origin-left scale-0 group-hover:scale-100 transition-all duration-300"></div>
-              <div className="border-b-2 border-b-zinc-600 dark:border-b-blue-900 origin-right scale-0 group-hover:scale-100 transition-all duration-300"></div>
             </div>
           </Link>
 
@@ -165,3 +144,4 @@ function Navbar() {
 }
 
 export default Navbar;
+``

@@ -1,12 +1,10 @@
 import { ImageProps } from "next/image";
-
-export const FroggerImages: ImageProps[] = [
+import { ImageLocationProps } from "../Interfaces";
+const locationURL =
+  "https://raw.githubusercontent.com/Dawaad/portfolio-project/master/portfolio/public/images/Frogger/";
+export const FroggerImages: ImageLocationProps[] = [
   {
-    src: "/images/Frogger/Screen.png",
-    alt: "Frogger game screen",
-  },
-  {
-    src: "/images/Frogger/Death.png",
-    alt: "Frogger game screen after death",
+    imageSrc: `${locationURL}Screen.png`,
+    alt: "Frogger Screen",
   },
 ];

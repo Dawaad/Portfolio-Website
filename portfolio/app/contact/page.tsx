@@ -4,7 +4,7 @@ import React from "react";
 import emailjs from "@emailjs/browser";
 import { PaperAirplaneIcon } from "@heroicons/react/24/outline";
 import emailDark from "../../public/emailDarkMode.svg";
-import emailLight from "../../public/emailLightMode.svg";
+import Tilt from "react-parallax-tilt";
 import AnimatedHorizontalPage from "../AnimatedHorizontalPage";
 import Image from "next/image";
 function page() {
@@ -48,7 +48,7 @@ function page() {
             <div className="h-[5px] rounded-lg mt-[1rem] bg-gradient-to-r from-orange-600 via-orange-800 w-11/12" />
           </div>
           <form onSubmit={sendEmail} className="p-4 w-full">
-            <div className="flex flex-col md:flex-row ">
+            <div className="flex flex-col xl:flex-row w-full">
               <div className="grid p-4 w-full">
                 <label className="font-semibold text-lg my-2 text-zinc-400">
                   First Name
@@ -60,7 +60,7 @@ function page() {
                   name="user_first_name"
                 />
               </div>
-              <div className="grid p-4 w-full ">
+              <div className="grid p-4  w-full">
                 <label className="font-semibold text-lg my-2 text-zinc-400">
                   Last Name
                 </label>
@@ -107,12 +107,13 @@ function page() {
           </form>
         </div>
         <div className="flex justify-center items-center">
-          <Image
-            src={emailDark}
-            alt="email illustration"
-            width={500}
-            height={500}
-          />
+          
+            <Image
+              src={emailDark}
+              className="w-[800px]"
+              alt="email illustration"
+            />
+       
         </div>
       </div>
     </AnimatedHorizontalPage>

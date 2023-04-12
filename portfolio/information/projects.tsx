@@ -11,38 +11,21 @@ import {
   SiGithub,
 } from "react-icons/si";
 import { RxEnter } from "react-icons/rx";
-import Image from "next/image";
+
 import flexTaskSVG from "../public/Project Icons/flextask.svg";
 import spotifyRedesignSVG from "../public/Project Icons/spotify.svg";
 import graphVisualiserSVG from "../public/Project Icons/graphvisualiser.svg";
 import froggerSVG from "../public/Project Icons/frogger.svg";
 
+import { projectOverview } from "../Interfaces";
+import { ProjectDetail } from "../Interfaces";
 import { FTImages } from "./FTImgExport";
 import { SpotifyImages } from "./SpotifyImgExport";
-import { IconType } from "react-icons";
-import { ImageProps } from "next/image";
-import { ReactNode } from "react";
 import { GraphImages } from "./DataVisualiserExport";
 import { FroggerImages } from "./FroggerExport";
-interface ProjectDetail {
-  title: string;
-  description: string;
-  images: ImageProps[];
-  techStack: ReactNode[];
-  links: {
-    name: string;
-    icon: ReactNode;
-    link: string;
-  }[];
-}
 
-interface projectOverview {
-  title: string;
-  memo: string;
-  logo: ImageProps;
-}
 
-export const projectOverview: projectOverview[] = [
+export const projectsOverview: projectOverview[] = [
   {
     title: "FlexTask",
     memo: "A Fullstack AI Powered Task Management System",
@@ -83,8 +66,7 @@ export const projects: ProjectDetail[] = [
   {
     title: "FlexTask",
 
-    description:
-      "One of the trickiest aspects of project task management, be that for work, school or leisure is breaking it down into manageable chunks. It’s often common to be completely overloaded with ideas, but no feasible first steps on how to start working on them.\n Flextask is an AI powered time management app that will help you manage your project by breaking it down into more manageable tasks. We provide the user with an intuitive interface, prompting them for information about their project and generating the tasks with an OpenAI query.  ",
+    description: "This application was built to leverage OpenAi's natural language processing capabilities accessible through their API to develop a Ai Powered Task breakdown system. Where users are able to input their project ideas and descriptions, which is then broken down into relevant Sub-tasks to help improve the Users work management capabilities and productivity.",
     images: FTImages,
 
     techStack: [

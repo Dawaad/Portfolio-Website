@@ -1,24 +1,27 @@
 import { ImageProps } from "next/image";
+import { ImageLocationProps } from "../Interfaces";
 
-export const GraphImages: ImageProps[] = [
+const locationURL =
+  "https://raw.githubusercontent.com/Dawaad/portfolio-project/master/portfolio/public/images/Graph/";
+export const GraphImages: ImageLocationProps[] = [
   {
-    src: "/images/Graph/Graph.png",
-    alt: "Graph Visualisation with Vertices and Edges",
+    imageSrc: `${locationURL}Graph.png`,
+    alt: "Graph",
   },
   {
-    src: "/images/Graph/NewEdge.png",
-    alt: "Menu to add values to an edge between two vertices",
+    imageSrc: `${locationURL}Deletion.png`,
+    alt: "Deletion",
   },
   {
-    src: "/images/Graph/Deletion.png",
-    alt: "Screen to delete a vertex or edge",
+    imageSrc: `${locationURL}NewEdge.png`,
+    alt: "New Edge",
   },
   {
-    src: "/images/Graph/Traversal.png",
-    alt: "Result of BFS traversal of the graph",
+    imageSrc: `${locationURL}Traversal.png`,
+    alt: "Traversal",
   },
   {
-    src: "/images/Graph/Dijkstras.png",
-    alt: "Result of Dijkstra's algorithm on the graph",
+    imageSrc: `${locationURL}Dijkstras.png`,
+    alt: "Dijkstras",
   },
 ];

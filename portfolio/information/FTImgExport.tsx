@@ -1,36 +1,31 @@
-import { ImageProps } from "next/image";
+import { ImageLocationProps } from "../Interfaces";
 
-export const FTImages: ImageProps[] = [
+const locationURL =
+  "https://raw.githubusercontent.com/Dawaad/portfolio-project/master/portfolio/public/images/Flextask/";
+
+export const FTImages: ImageLocationProps[] = [
   {
-    src: "/images/Flextask/calendarview.jpg",
-    alt: "FlexTask Calendar View",
-  },
-  {
-    src: "/images/Flextask/homepage.jpg",
+    imageSrc: `${locationURL}homepage.jpg`,
     alt: "FlexTask Homepage",
   },
   {
-    src: "/images/Flextask/newproject.jpg",
-    alt: "FlexTask New Project",
+    imageSrc: `${locationURL}calendarview.jpg`,
+    alt: "FlexTask Calendar View",
   },
   {
-    src: "/images/Flextask/login.jpg",
-    alt: "FlexTask Login",
+    imageSrc: `${locationURL}login.jpg`,
+    alt: "FlexTask Login Page",
   },
   {
-    src: "/images/Flextask/projectinformation.jpg",
+    imageSrc: `${locationURL}projectinformation.jpg`,
     alt: "FlexTask Project Information",
   },
   {
-    src: "/images/Flextask/projectpage.jpg",
-    alt: "FlexTask Project Page",
-  },
-  {
-    src: "/images/Flextask/projectview.jpg",
+    imageSrc: `${locationURL}projectview.jpg`,
     alt: "FlexTask Project View",
   },
   {
-    src: "/images/Flextask/todaytask.jpg",
-    alt: "FlexTask Today Tasks",
+    imageSrc: `${locationURL}projectpage.jpg`,
+    alt: "FlexTask Project Page",
   },
 ];

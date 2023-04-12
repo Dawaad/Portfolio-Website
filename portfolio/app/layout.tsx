@@ -16,7 +16,7 @@ export default function RootLayout({
   return (
     <>
       <html className={`bg-zinc-900 ${rubik.variable} font-sans`} lang="en">
-        <body className="overflow-x-hidden">
+        <body className="overflow-x-hidden scrollbar-thin scrollbar-thumb-zinc-500 scrollbar-track-zinc-900">
           <Navbar />
 
           {children}
