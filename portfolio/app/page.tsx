@@ -245,7 +245,7 @@ export default function Page() {
                           tiltMaxAngleX={20}
                           tiltReverse={true}
                           tiltMaxAngleY={20}
-                          className="text-zinc-400 text-base lg:text-lg px-3 py-2 lg:px-4 font-semibold rounded-lg bg-zinc-800 m-2 shadow-black shadow-md"
+                          className="text-zinc-400 text-sm lg:text-lg px-2 py-2 lg:px-4 font-semibold rounded-lg bg-zinc-800 m-2 shadow-black shadow-md"
                         >
                           <span className=" ">{skill}</span>
                         </Tilt>
