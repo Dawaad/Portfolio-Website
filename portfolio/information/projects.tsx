@@ -100,7 +100,7 @@ export const projects: ProjectDetail[] = [
   {
     title: "Spotify Redesign",
     description:
-      "The Spotify Resdesign Project is an application using NextJS, nextAuth, TailwindCSS and uses the Spotify API, this application allows users to connect their spotify accounts and have complete control over the songs they are currently playing through any official Spotify Application. The application also lets users view their playlists and search for new Artists and Albums. This application is fully responsive with the use of TailwindCSS, allowing for user on all devices.",
+      "The Spotify Redesign Project is an application using NextJS, nextAuth, TailwindCSS and uses the Spotify API, this application allows users to connect their spotify accounts and have complete control over the songs they are currently playing through any official Spotify Application. The application also lets users view their playlists and search for new Artists and Albums. This application is fully responsive with the use of TailwindCSS, allowing for user on all devices.",
     images: SpotifyImages,
     techStack: [
       <SiReact className={`${techStackIcon}`} color={"#61DBFB"} />,
