@@ -197,10 +197,7 @@ export default function Page() {
         </div>
       </div>
 
-      <div
-        id="skills"
-        className="flex justify-center items-center h-[60rem] "
-      >
+      <div id="skills" className="flex justify-center items-center h-[60rem] ">
         <div className="w-full h-[40rem] p-4 m-4 md:grid md:grid-cols-2 md:grid-rows-2">
           <div className=" items-center flex justify-center md:justify-end row-span-2">
             <div>
@@ -242,7 +239,7 @@ export default function Page() {
                     {skill.skills.map((skill, index) => {
                       return (
                         <Tilt
-                          
+                          key={`skills${index}`}
                           reset={false}
                           transitionSpeed={2000}
                           tiltMaxAngleX={20}
@@ -250,12 +247,7 @@ export default function Page() {
                           tiltMaxAngleY={20}
                           className="text-zinc-400 text-base lg:text-lg px-3 py-2 lg:px-4 font-semibold rounded-lg bg-zinc-800 m-2 shadow-black shadow-md"
                         >
-                          <span
-                            key={`skills${index}`}
-                            className=" "
-                          >
-                            {skill}
-                          </span>
+                          <span className=" ">{skill}</span>
                         </Tilt>
                       );
                     })}
@@ -306,7 +298,7 @@ export default function Page() {
                 tiltReverse={true}
                 tiltMaxAngleY={10}
               >
-                <PersonEmail/>
+                <PersonEmail />
               </Tilt>
             </Fade>
           </div>
