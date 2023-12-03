@@ -29,3 +29,4 @@ export const FTImages: ImageLocationProps[] = [
     alt: "FlexTask Project Page",
   },
 ];
+

@@ -8,6 +8,7 @@ export interface ImageLocationProps {
 
 export interface ProjectDetail {
   title: string;
+  identifier: string;
   description: string;
   images: ImageLocationProps[];
   techStack: ReactNode[];

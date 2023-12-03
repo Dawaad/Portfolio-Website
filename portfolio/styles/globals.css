@@ -39,20 +39,22 @@
   animation: pulsateNewColor 10s forwards infinite;
 }
 
-#Check1, #Check2, #Check3{
+#Check1,
+#Check2,
+#Check3 {
   animation: checkEmail 5s forwards infinite;
   animation-delay: calc(var(--order) * 500ms);
 }
 
 @keyframes checkEmail {
-  0%{
-    opacity:0
+  0% {
+    opacity: 0;
   }
-  50%{
-    opacity:1
+  50% {
+    opacity: 1;
   }
-  100%{
-    opacity:0
+  100% {
+    opacity: 0;
   }
 }
 
@@ -87,5 +89,38 @@
   }
 }
 
+.tile::before,
+.tile-border {
+  border-radius: inherit;
+  content: "";
+  z-index: 3;
+  position: absolute;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+}
+
+.tile::before {
+  background: radial-gradient(
+    600px circle at var(--mouse-x) var(--mouse-y),
+    rgba(255, 255, 255, 0.1),
+    transparent 30%
+  );
+}
+
+.tile-border {
+  background: radial-gradient(
+    300px circle at var(--mouse-x) var(--mouse-y),
+    rgba(255, 255, 255, 0.3),
+    transparent 30%
+  );
+  z-index: 1;
+}
 
 
+.tiles:hover > .tile > .tile-border{
+  opacity: 1;
+}

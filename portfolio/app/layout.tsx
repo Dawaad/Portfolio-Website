@@ -4,9 +4,12 @@ import "../styles/globals.css";
 // import Footer from "./Footer";
 import Navbar from "./navbar";
 import Script from "next/script";
-import { Rubik } from "next/font/google";
+import {Oswald} from 'next/font/google'
 
-const rubik = Rubik({ subsets: ["latin"], variable: "--font-rubik" });
+const oswald = Oswald({
+  subsets: ['latin'],
+  display: 'swap',
+})
 
 export default function RootLayout({
   children,
@@ -15,7 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <>
-      <html className={`bg-zinc-900 ${rubik.variable} font-sans`} lang="en">
+      <html className={`bg-zinc-900 ${oswald.className}`} lang="en">
         <body className="overflow-x-hidden scrollbar-thin scrollbar-thumb-zinc-500 scrollbar-track-zinc-900">
           <Navbar />
 

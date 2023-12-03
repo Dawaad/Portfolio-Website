@@ -22,3 +22,8 @@ export const SpotifyImages: ImageLocationProps[] = [
     alt: "Spotify Search Full",
   },
 ];
+
+export const spotifyIcon: ImageProps = {
+  src: `${locationURL}spotify-icon.png`,
+  alt: "Spotify Icon",
+};
