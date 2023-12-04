@@ -6,7 +6,7 @@ import { projects } from "../../information/projects";
 import AnimatedHorizontalPage from "../AnimatedHorizontalPage";
 import ProjectTile from "./projectTile";
 import { ArrowLeftIcon, ArrowRightIcon } from "@heroicons/react/24/outline";
-function layout({ children }: { children: React.ReactNode }) {
+function Layout({ children }: { children: React.ReactNode }) {
   const [sideBarOpen, setSideBarOpen] = useState<boolean>(true);
 
   return (
@@ -57,4 +57,4 @@ function layout({ children }: { children: React.ReactNode }) {
   );
 }
 
-export default layout;
+export default Layout;
