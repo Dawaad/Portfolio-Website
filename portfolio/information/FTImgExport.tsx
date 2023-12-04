@@ -1,3 +1,4 @@
+import { ImageProps } from "next/image";
 import { ImageLocationProps } from "../Interfaces";
 
 const locationURL =
@@ -30,3 +31,7 @@ export const FTImages: ImageLocationProps[] = [
   },
 ];
 
+export const FTIcon: ImageProps = {
+  src: `${locationURL}flextask-icon.jpg`,
+  alt: "FlexTask Icon",
+};

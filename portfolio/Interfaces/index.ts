@@ -10,6 +10,7 @@ export interface ProjectDetail {
   title: string;
   identifier: string;
   description: string;
+  icon: ImageProps;
   images: ImageLocationProps[];
   techStack: ReactNode[];
   links: {
@@ -19,8 +20,3 @@ export interface ProjectDetail {
   }[];
 }
 
-export interface projectOverview {
-  title: string;
-  memo: string;
-  logo: ImageProps;
-}

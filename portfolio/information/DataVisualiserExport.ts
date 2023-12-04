@@ -25,3 +25,8 @@ export const GraphImages: ImageLocationProps[] = [
     alt: "Dijkstras",
   },
 ];
+
+export const GraphIcon: ImageProps = {
+  src: `${locationURL}Graph-Icon.png`,
+  alt: "Graph",
+};
