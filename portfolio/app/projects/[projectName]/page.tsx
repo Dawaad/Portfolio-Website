@@ -3,7 +3,6 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
-import { projectsOverview } from "../../../information/projects";
 import Link from "next/link";
 import { projects } from "../../../information/projects";
 import AnimatedVerticalPage from "../../AnimatedVerticalPage";
