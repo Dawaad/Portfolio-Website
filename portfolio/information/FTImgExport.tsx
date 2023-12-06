@@ -1,36 +1,35 @@
 import { ImageProps } from "next/image";
 
-const locationURL =
-  "https://raw.githubusercontent.com/Dawaad/portfolio-project/dev/portfolio/public/images/Flextask/";
+const locationPath = "/images/Flextask/";
 
 export const FTImages: ImageProps[] = [
   {
-    src: `${locationURL}homepage.jpg`,
+    src: `${locationPath}homepage.jpg`,
     alt: "FlexTask Homepage",
   },
   {
-    src: `${locationURL}calendarview.jpg`,
+    src: `${locationPath}calendarview.jpg`,
     alt: "FlexTask Calendar View",
   },
   {
-    src: `${locationURL}login.jpg`,
+    src: `${locationPath}login.jpg`,
     alt: "FlexTask Login Page",
   },
   {
-    src: `${locationURL}projectinformation.jpg`,
+    src: `${locationPath}projectinformation.jpg`,
     alt: "FlexTask Project Information",
   },
   {
-    src: `${locationURL}projectview.jpg`,
+    src: `${locationPath}projectview.jpg`,
     alt: "FlexTask Project View",
   },
   {
-    src: `${locationURL}projectpage.jpg`,
+    src: `${locationPath}projectpage.jpg`,
     alt: "FlexTask Project Page",
   },
 ];
 
 export const FTIcon: ImageProps = {
-  src: `${locationURL}flextask-icon.jpg`,
+  src: `${locationPath}flextask-icon.jpg`,
   alt: "FlexTask Icon",
 };

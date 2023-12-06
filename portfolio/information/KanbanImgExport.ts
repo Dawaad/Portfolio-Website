@@ -1,9 +1,8 @@
 import { ImageProps } from "next/image";
 
-const locationURL =
-  "https://raw.githubusercontent.com/Dawaad/portfolio-project/dev/portfolio/public/images/Kanban/";
+const locationPath = "/images/Kanban/";
 
 export const KanbanIcon: ImageProps = {
-  src: `${locationURL}kanban-icon.jpg`,
+  src: `${locationPath}kanban-icon.jpg`,
   alt: "Kanban Board Plus Icon",
 };
