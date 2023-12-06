@@ -122,7 +122,7 @@ export default function Page() {
               </a>
               <a href="/contact" className="group">
                 <p className="text-zinc-200 text-xl  lg:text-2xl font-semibold hover:text-zinc-400  transition-all duration-[600ms] border-[3px] border-zinc-400 px-4 py-3 rounded-lg">
-                  Hire Me Today
+                  Contact Me
                 </p>
                 <div className="mt-2 space-y-2 h-0 ">
                   <div className="h-[2px] bg-zinc-400 m-auto scale-0 transition-all origin-left duration-[200ms] group-hover:scale-100"></div>
@@ -150,7 +150,7 @@ export default function Page() {
               <Fade delay={150}>
                 <div className="text-zinc-400 text-xl md:text-2xl font-bold flex lg:px-8 py-4 lg:justify-end  h-fit ">
                   <span>
-                    I love to work on exciting projects in my own time.
+                    I love working on projects to further develop my skillset.
                   </span>
                 </div>
               </Fade>
@@ -209,7 +209,7 @@ export default function Page() {
               <Fade delay={150}>
                 <div className="text-zinc-400 text-xl md:text-2xl font-bold flex lg:px-8 py-4 lg:justify-end  h-fit ">
                   <span>
-                    I am always learning new things and improving my skills.
+                    I am always trying to new ways to improve my applications
                   </span>
                 </div>
               </Fade>

@@ -1,24 +1,27 @@
 import { ImageProps } from "next/image";
-import { ImageLocationProps } from "../Interfaces";
 
-const locationURL =
-  "https://raw.githubusercontent.com/Dawaad/portfolio-project/master/portfolio/public/images/Spotify/";
+const locationPath = "/images/Spotify/";
 
-export const SpotifyImages: ImageLocationProps[] = [
+export const SpotifyImages: ImageProps[] = [
   {
-    imageSrc: `${locationURL}Dashboard.png`,
+    src: `${locationPath}Dashboard.png`,
     alt: "Spotify Dashboard",
   },
   {
-    imageSrc: `${locationURL}Playlist.png`,
+    src: `${locationPath}Playlist.png`,
     alt: "Spotify Playlist",
   },
   {
-    imageSrc: `${locationURL}Search.png`,
+    src: `${locationPath}Search.png`,
     alt: "Spotify Search",
   },
   {
-    imageSrc: `${locationURL}SearchFull.png`,
+    src: `${locationPath}SearchFull.png`,
     alt: "Spotify Search Full",
   },
 ];
+
+export const spotifyIcon: ImageProps = {
+  src: `${locationPath}spotify-icon.png`,
+  alt: "Spotify Icon",
+};

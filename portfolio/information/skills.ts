@@ -14,5 +14,6 @@ export const languages = [
   "Python",
   "Java",
   "Swift",
-  "C++",
+  "C",
+  "PHP"
 ];
