@@ -63,9 +63,11 @@ function ProjectsPage({ params }: { params: { projectName: string } }) {
           >
             {project?.images.map((image) => {
               return (
-                <div className="w-full h-full relative">
+                <div
+                  key={image.src.toString()}
+                  className="w-full h-full relative"
+                >
                   <Image
-                    key={image.src.toString()}
                     {...image}
                     alt={image.alt}
                     className="rounded-lg"
