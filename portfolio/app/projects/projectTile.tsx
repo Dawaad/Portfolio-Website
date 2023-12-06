@@ -32,12 +32,13 @@ function ProjectTile(project: Props) {
         onMouseMove={(e) => {
           handleOnMouseMove(e);
         }}
-        className="group rounded-lg relative bg-neutral-800/50 hover:bg-neutral-800 transition-all duration-300  cursor-pointer md:w-[20rem] lg:w-[30rem] h-[18rem] lg:h-[20rem] px-[0.35rem] md:px-0 my-2 mx-4   md:mx-4 tile  flex justify-center items-center z-[3] hover:before:opacity-100"
+        className="group rounded-lg relative bg-neutral-800/50 hover:bg-neutral-800 transition-all duration-300  cursor-pointer md:w-[28dvw] h-[30dvh] md:h-[26dvh] lg:h-[30dvh] px-[0.35rem] md:px-0 my-4 md:my-2 mx-4 md:mx-4 tile  flex justify-center items-center z-[3] hover:before:opacity-100"
       >
         <div className="tile-border hover:opacity-100 mx-4"></div>
-        <div className="w-full md:w-[19rem] lg:w-[29rem] h-[17rem] lg:h-[19rem] rounded-lg  bg-neutral-900/80 z-[2] relative flex overflow-hidden items-end">
+        <div className="w-full md:w-[27dvw] h-[29dvh] md:h-[25dvh] lg:h-[29dvh]  rounded-lg  bg-neutral-900/80 z-[2] relative flex overflow-hidden items-end">
           <Image
             fill
+            style={{ objectFit: "cover" }}
             {...project.project.icon}
             alt={project.project.icon.alt}
             className="opacity-60 saturate-50 brightness-50  transition-all group-hover:saturate-100 group-hover:brightness-100"
