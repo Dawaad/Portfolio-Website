@@ -1,32 +1,31 @@
 import { ImageProps } from "next/image";
-import { ImageLocationProps } from "../Interfaces";
 
 const locationURL =
-  "https://raw.githubusercontent.com/Dawaad/portfolio-project/master/portfolio/public/images/Flextask/";
+  "https://raw.githubusercontent.com/Dawaad/portfolio-project/dev/portfolio/public/images/Flextask/";
 
-export const FTImages: ImageLocationProps[] = [
+export const FTImages: ImageProps[] = [
   {
-    imageSrc: `${locationURL}homepage.jpg`,
+    src: `${locationURL}homepage.jpg`,
     alt: "FlexTask Homepage",
   },
   {
-    imageSrc: `${locationURL}calendarview.jpg`,
+    src: `${locationURL}calendarview.jpg`,
     alt: "FlexTask Calendar View",
   },
   {
-    imageSrc: `${locationURL}login.jpg`,
+    src: `${locationURL}login.jpg`,
     alt: "FlexTask Login Page",
   },
   {
-    imageSrc: `${locationURL}projectinformation.jpg`,
+    src: `${locationURL}projectinformation.jpg`,
     alt: "FlexTask Project Information",
   },
   {
-    imageSrc: `${locationURL}projectview.jpg`,
+    src: `${locationURL}projectview.jpg`,
     alt: "FlexTask Project View",
   },
   {
-    imageSrc: `${locationURL}projectpage.jpg`,
+    src: `${locationURL}projectpage.jpg`,
     alt: "FlexTask Project Page",
   },
 ];

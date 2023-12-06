@@ -1,27 +1,26 @@
 import { ImageProps } from "next/image";
-import { ImageLocationProps } from "../Interfaces";
 
 const locationURL =
-  "https://raw.githubusercontent.com/Dawaad/portfolio-project/master/portfolio/public/images/Graph/";
-export const GraphImages: ImageLocationProps[] = [
+  "https://raw.githubusercontent.com/Dawaad/portfolio-project/dev/portfolio/public/images/Graph/";
+export const GraphImages: ImageProps[] = [
   {
-    imageSrc: `${locationURL}Graph.png`,
+    src: `${locationURL}Graph.png`,
     alt: "Graph",
   },
   {
-    imageSrc: `${locationURL}Deletion.png`,
+    src: `${locationURL}Deletion.png`,
     alt: "Deletion",
   },
   {
-    imageSrc: `${locationURL}NewEdge.png`,
+    src: `${locationURL}NewEdge.png`,
     alt: "New Edge",
   },
   {
-    imageSrc: `${locationURL}Traversal.png`,
+    src: `${locationURL}Traversal.png`,
     alt: "Traversal",
   },
   {
-    imageSrc: `${locationURL}Dijkstras.png`,
+    src: `${locationURL}Dijkstras.png`,
     alt: "Dijkstras",
   },
 ];
