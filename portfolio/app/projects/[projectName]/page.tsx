@@ -67,7 +67,7 @@ function ProjectsPage({ params }: { params: { projectName: string } }) {
         >
           {project?.images.map((image, index) => {
             return (
-              <div className="">
+              <div className="" key={index}>
                 <Image
                   {...image}
                   alt={image.alt}
