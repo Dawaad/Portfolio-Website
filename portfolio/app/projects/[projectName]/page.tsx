@@ -17,7 +17,7 @@ function ProjectsPage({ params }: { params: { projectName: string } }) {
   const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 2,
+      items: 1,
       paritialVisibilityGutter: 60,
     },
     tablet: {
@@ -67,16 +67,8 @@ function ProjectsPage({ params }: { params: { projectName: string } }) {
         >
           {project?.images.map((image, index) => {
             return (
-              <div className="" key={index}>
-                <Image
-                  {...image}
-                  alt={image.alt}
-                  fill
-                  style={{
-                    width: "100%",
-                    height: "100%",
-                  }}
-                />
+              <div className="w-full h-full" key={index}>
+                <Image {...image} alt={image.alt} fill />
               </div>
             );
           })}

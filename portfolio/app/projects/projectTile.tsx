@@ -39,6 +39,7 @@ function ProjectTile(project: Props) {
           <Image
             fill
             style={{ objectFit: "cover" }}
+            placeholder="blur"
             {...project.project.icon}
             alt={project.project.icon.alt}
             className="opacity-60 saturate-50 brightness-50  transition-all group-hover:saturate-100 group-hover:brightness-100"

@@ -1,8 +1,9 @@
-import { ImageProps } from "next/image";
+
+import Image from "next/image";
 
 const locationPath = "/images/Spotify/";
 
-export const SpotifyImages: ImageProps[] = [
+export const SpotifyImages = [
   {
     src: `${locationPath}Dashboard.png`,
     alt: "Spotify Dashboard",
@@ -21,7 +22,8 @@ export const SpotifyImages: ImageProps[] = [
   },
 ];
 
-export const spotifyIcon: ImageProps = {
-  src: `${locationPath}spotify-icon.png`,
-  alt: "Spotify Icon",
+[]
+
+export const SpotifyIcon = () => {
+  return <Image src={`${locationPath}Spotify-Icon.png`} alt="Spotify" />;
 };
