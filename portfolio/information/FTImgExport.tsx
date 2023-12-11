@@ -1,35 +1,40 @@
 import { ImageProps } from "next/image";
-
-const locationPath = "/images/Flextask/";
+import icon from "../public/images/Flextask/flextask-icon.jpg";
+import homepage from "../public/images/Flextask/homepage.jpg";
+import calendarview from "../public/images/Flextask/calendarview.jpg";
+import login from "../public/images/Flextask/login.jpg";
+import projectinformation from "../public/images/Flextask/projectinformation.jpg";
+import projectview from "../public/images/Flextask/projectview.jpg";
+import projectpage from "../public/images/Flextask/projectpage.jpg";
 
 export const FTImages: ImageProps[] = [
   {
-    src: `${locationPath}homepage.jpg`,
+    src: homepage,
     alt: "FlexTask Homepage",
   },
   {
-    src: `${locationPath}calendarview.jpg`,
+    src: calendarview,
     alt: "FlexTask Calendar View",
   },
   {
-    src: `${locationPath}login.jpg`,
+    src: login,
     alt: "FlexTask Login Page",
   },
   {
-    src: `${locationPath}projectinformation.jpg`,
+    src: projectinformation,
     alt: "FlexTask Project Information",
   },
   {
-    src: `${locationPath}projectview.jpg`,
+    src: projectview,
     alt: "FlexTask Project View",
   },
   {
-    src: `${locationPath}projectpage.jpg`,
+    src: projectpage,
     alt: "FlexTask Project Page",
   },
 ];
 
 export const FTIcon: ImageProps = {
-  src: `${locationPath}flextask-icon.jpg`,
+  src: icon,
   alt: "FlexTask Icon",
 };

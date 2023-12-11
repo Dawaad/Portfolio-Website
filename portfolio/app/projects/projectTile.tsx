@@ -4,7 +4,7 @@ import React, { useEffect } from "react";
 import { ProjectDetail } from "../../Interfaces";
 import Image from "next/image";
 import Link from "next/link";
-import { spotifyIcon } from "../../information/SpotifyImgExport";
+
 type Props = {
   project: ProjectDetail;
   callback: () => void;
@@ -35,10 +35,9 @@ function ProjectTile(project: Props) {
         className="group rounded-lg relative bg-neutral-800/50 hover:bg-neutral-800 transition-all duration-300  cursor-pointer md:w-[28dvw] h-[30dvh] md:h-[26dvh] lg:h-[30dvh] px-[0.35rem] md:px-0 my-4 md:my-2 mx-4 md:mx-4 tile  flex justify-center items-center z-[3] hover:before:opacity-100"
       >
         <div className="tile-border hover:opacity-100 mx-4"></div>
-        <div className="w-full md:w-[27dvw] h-[29dvh] md:h-[25dvh] lg:h-[29dvh]  rounded-lg  bg-neutral-900/80 z-[2] relative flex overflow-hidden items-end">
+        <div className="w-full md:w-[27dvw] h-[29dvh] md:h-[25dvh] lg:h-[29dvh]  rounded-lg  bg-neutral-900/80 z-[2] flex overflow-hidden items-end">
           <Image
             fill
-            style={{ objectFit: "cover" }}
             placeholder="blur"
             {...project.project.icon}
             alt={project.project.icon.alt}

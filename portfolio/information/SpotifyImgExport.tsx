@@ -1,29 +1,33 @@
-
-import Image from "next/image";
+import Image, { ImageProps } from "next/image";
 
 const locationPath = "/images/Spotify/";
 
+import icon from "../public/images/Spotify/spotify-icon.png";
+import dashboard from "../public/images/Spotify/Dashboard.png";
+import playlist from "../public/images/Spotify/Playlist.png";
+import search from "../public/images/Spotify/Search.png";
+import searchFull from "../public/images/Spotify/SearchFull.png";
+
 export const SpotifyImages = [
   {
-    src: `${locationPath}Dashboard.png`,
+    src: dashboard,
     alt: "Spotify Dashboard",
   },
   {
-    src: `${locationPath}Playlist.png`,
+    src: playlist,
     alt: "Spotify Playlist",
   },
   {
-    src: `${locationPath}Search.png`,
+    src: search,
     alt: "Spotify Search",
   },
   {
-    src: `${locationPath}SearchFull.png`,
+    src: searchFull,
     alt: "Spotify Search Full",
   },
 ];
 
-[]
-
-export const SpotifyIcon = () => {
-  return <Image src={`${locationPath}Spotify-Icon.png`} alt="Spotify" />;
+export const spotifyIcon: ImageProps = {
+  src: icon,
+  alt: "Spotify Icon",
 };

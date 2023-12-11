@@ -1,30 +1,35 @@
 import { ImageProps } from "next/image";
+import icon from "../public/images/Graph/graph-icon.png";
+import graph from "../public/images/Graph/Graph.png";
+import deletion from "../public/images/Graph/Deletion.png";
+import newEdge from "../public/images/Graph/NewEdge.png";
+import traversal from "../public/images/Graph/Traversal.png";
+import dijkstras from "../public/images/Graph/Dijkstras.png";
 
-const locationPath = "/images/Graph/";
 export const GraphImages: ImageProps[] = [
   {
-    src: `${locationPath}Graph.png`,
+    src: graph,
     alt: "Graph",
   },
   {
-    src: `${locationPath}Deletion.png`,
+    src: deletion,
     alt: "Deletion",
   },
   {
-    src: `${locationPath}NewEdge.png`,
+    src: newEdge,
     alt: "New Edge",
   },
   {
-    src: `${locationPath}Traversal.png`,
+    src: traversal,
     alt: "Traversal",
   },
   {
-    src: `${locationPath}Dijkstras.png`,
+    src: dijkstras,
     alt: "Dijkstras",
   },
 ];
 
 export const GraphIcon: ImageProps = {
-  src: `${locationPath}Graph-Icon.png`,
+  src: icon,
   alt: "Graph",
 };
