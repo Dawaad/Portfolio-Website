@@ -120,7 +120,6 @@
   z-index: 1;
 }
 
-
-.tiles:hover > .tile > .tile-border{
+.tiles:hover > .tile > .tile-border {
   opacity: 1;
 }

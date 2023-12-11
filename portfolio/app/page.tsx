@@ -61,12 +61,13 @@ export default function Page() {
   }, []);
 
   return (
+
     <AnimatedHorizontalPage>
       <div id="landing" className="flex justify-center items-center h-[60rem] ">
         <div className="w-full h-[20rem] p-4 m-4 md:grid md:grid-cols-2 md:grid-rows-2">
           <div className=" items-center flex justify-center md:justify-end">
             <div>
-              <Fade delay={300}>
+              <Fade triggerOnce delay={300}>
                 <h1 className="text-zinc-200  text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold">
                   Hello! I am Jared Tucker.
                 </h1>
@@ -80,10 +81,18 @@ export default function Page() {
               </div>
 
               <div className="w-full md:w-[18rem] lg:w-[25rem] h-[50px]  relative ">
-                <Slide className="absolute left-0 top-0" direction="left">
+                <Slide
+                  triggerOnce
+                  className="absolute left-0 top-0"
+                  direction="left"
+                >
                   <div className="h-[5px] rounded-lg mt-[1rem] bg-gradient-to-r from-orange-600 via-orange-800 w-[17rem] md:w-[13rem] lg:w-[17rem] " />
                 </Slide>
-                <Slide className="absolute right-0 bottom-0" direction="right">
+                <Slide
+                  triggerOnce
+                  className="absolute right-0 bottom-0"
+                  direction="right"
+                >
                   <div className="h-[5px] rounded-lg mt-[1rem] bg-gradient-to-l from-orange-600 via-orange-800 w-[17rem] md:w-[13rem] lg:w-[17rem] " />
                 </Slide>
               </div>
@@ -91,7 +100,10 @@ export default function Page() {
           </div>
 
           <div className="flex justify-center items-start row-span-2   relative">
-            <Fade className="absolute bottom-0 hidden md:block  md:w-[350px] lg:w-[400px] xl:w-[500px] ">
+            <Fade
+              triggerOnce
+              className="absolute bottom-0 hidden md:block  md:w-[350px] lg:w-[400px] xl:w-[500px] "
+            >
               <Tilt
                 reset={false}
                 transitionSpeed={1500}
@@ -105,7 +117,7 @@ export default function Page() {
           </div>
 
           <div className="flex items-center justify-center lg:justify-end space-x-6 mt-10  h-[8rem] mr-10">
-            <Fade cascade damping={0.1}>
+            <Fade triggerOnce cascade damping={0.1}>
               <a
                 className="cursor-pointer"
                 href="https://github.com/Dawaad"
@@ -142,12 +154,12 @@ export default function Page() {
         <div className="w-full h-[20rem] p-4 m-4 md:grid md:grid-cols-2 md:grid-rows-2">
           <div className=" items-center flex justify-center md:justify-end">
             <div>
-              <Fade delay={300}>
+              <Fade triggerOnce delay={300}>
                 <h1 className="text-zinc-200  text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold">
                   Take a look at my portfolio.
                 </h1>
               </Fade>
-              <Fade delay={150}>
+              <Fade triggerOnce delay={150}>
                 <div className="text-zinc-400 text-xl md:text-2xl font-bold flex lg:px-8 py-4 lg:justify-end  h-fit ">
                   <span>
                     I love working on projects to further develop my skillset.
@@ -156,10 +168,18 @@ export default function Page() {
               </Fade>
 
               <div className="w-full md:w-[18rem] lg:w-[25rem] h-[50px]  relative ">
-                <Slide className="absolute left-0 top-0" direction="left">
+                <Slide
+                  triggerOnce
+                  className="absolute left-0 top-0"
+                  direction="left"
+                >
                   <div className="h-[5px] rounded-lg mt-[1rem] bg-gradient-to-r from-orange-600 via-orange-800 w-[17rem] md:w-[13rem] lg:w-[17rem] " />
                 </Slide>
-                <Slide className="absolute right-0 bottom-0" direction="right">
+                <Slide
+                  triggerOnce
+                  className="absolute right-0 bottom-0"
+                  direction="right"
+                >
                   <div className="h-[5px] rounded-lg mt-[1rem] bg-gradient-to-l from-orange-600 via-orange-800 w-[17rem] md:w-[13rem] lg:w-[17rem] " />
                 </Slide>
               </div>
@@ -167,7 +187,10 @@ export default function Page() {
           </div>
 
           <div className="flex justify-center items-start row-span-2  relative">
-            <Fade className="absolute bottom-0 hidden md:block  md:w-[350px] lg:w-[400px] xl:w-[600px] transition-all ">
+            <Fade
+              triggerOnce
+              className="absolute bottom-0 hidden md:block  md:w-[350px] lg:w-[400px] xl:w-[600px] transition-all "
+            >
               <Tilt
                 reset={false}
                 transitionSpeed={1500}
@@ -181,7 +204,7 @@ export default function Page() {
           </div>
 
           <div className="flex items-center justify-center lg:justify-end space-x-6 mt-16 h-[8rem] mr-10">
-            <Fade>
+            <Fade triggerOnce>
               <a href="/projects" className="group">
                 <p className="text-zinc-200 text-xl  lg:text-2xl font-semibold hover:text-zinc-400  transition-all duration-[600ms] border-[3px] border-zinc-400 px-5 py-3 rounded-lg">
                   See My Work
@@ -201,12 +224,12 @@ export default function Page() {
         <div className="w-full h-[40rem] p-4 m-4 md:grid md:grid-cols-2 md:grid-rows-2">
           <div className=" items-center flex justify-center md:justify-end row-span-2">
             <div>
-              <Fade delay={300}>
+              <Fade triggerOnce delay={300}>
                 <h1 className="text-zinc-200  text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold">
                   Here are some of my skills
                 </h1>
               </Fade>
-              <Fade delay={150}>
+              <Fade triggerOnce delay={150}>
                 <div className="text-zinc-400 text-xl md:text-2xl font-bold flex lg:px-8 py-4 lg:justify-end  h-fit ">
                   <span>
                     I am always trying to new ways to improve my applications
@@ -215,10 +238,18 @@ export default function Page() {
               </Fade>
 
               <div className="w-full md:w-[18rem] lg:w-[25rem] h-[50px]  relative ">
-                <Slide className="absolute left-0 top-0" direction="left">
+                <Slide
+                  triggerOnce
+                  className="absolute left-0 top-0"
+                  direction="left"
+                >
                   <div className="h-[5px] rounded-lg mt-[1rem] bg-gradient-to-r from-orange-600 via-orange-800 w-[17rem] md:w-[13rem] lg:w-[17rem] " />
                 </Slide>
-                <Slide className="absolute right-0 bottom-0" direction="right">
+                <Slide
+                  triggerOnce
+                  className="absolute right-0 bottom-0"
+                  direction="right"
+                >
                   <div className="h-[5px] rounded-lg mt-[1rem] bg-gradient-to-l from-orange-600 via-orange-800 w-[17rem] md:w-[13rem] lg:w-[17rem] " />
                 </Slide>
               </div>
@@ -265,12 +296,12 @@ export default function Page() {
         <div className="w-full h-[20rem] p-4 m-4 md:grid md:grid-cols-2 md:grid-rows-2">
           <div className=" items-center flex justify-center md:justify-end">
             <div>
-              <Fade delay={300}>
+              <Fade triggerOnce delay={300}>
                 <h1 className="text-zinc-200  text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold">
                   Send me a message.
                 </h1>
               </Fade>
-              <Fade delay={150}>
+              <Fade triggerOnce delay={150}>
                 <div className="text-zinc-400 text-xl md:text-2xl font-bold flex lg:px-8 py-4 lg:justify-end  h-fit ">
                   <span>
                     I would love to answer all questions or enquiries.
@@ -279,10 +310,18 @@ export default function Page() {
               </Fade>
 
               <div className="w-full md:w-[18rem] lg:w-[25rem] h-[50px]  relative ">
-                <Slide className="absolute left-0 top-0" direction="left">
+                <Slide
+                  triggerOnce
+                  className="absolute left-0 top-0"
+                  direction="left"
+                >
                   <div className="h-[5px] rounded-lg mt-[1rem] bg-gradient-to-r from-orange-600 via-orange-800 w-[17rem] md:w-[13rem] lg:w-[17rem] " />
                 </Slide>
-                <Slide className="absolute right-0 bottom-0" direction="right">
+                <Slide
+                  triggerOnce
+                  className="absolute right-0 bottom-0"
+                  direction="right"
+                >
                   <div className="h-[5px] rounded-lg mt-[1rem] bg-gradient-to-l from-orange-600 via-orange-800 w-[17rem] md:w-[13rem] lg:w-[17rem] " />
                 </Slide>
               </div>
@@ -290,7 +329,10 @@ export default function Page() {
           </div>
 
           <div className="flex justify-center items-start row-span-2  relative">
-            <Fade className="absolute bottom-0 hidden md:block  md:w-[350px] lg:w-[400px] xl:w-[600px] transition-all ">
+            <Fade
+              triggerOnce
+              className="absolute bottom-0 hidden md:block  md:w-[350px] lg:w-[400px] xl:w-[600px] transition-all "
+            >
               <Tilt
                 reset={false}
                 transitionSpeed={1500}
@@ -304,7 +346,7 @@ export default function Page() {
           </div>
 
           <div className="flex items-center justify-center lg:justify-end space-x-6 mt-16 h-[8rem] mr-10">
-            <Fade>
+            <Fade triggerOnce>
               <a href="/contact" className="group">
                 <p className="text-zinc-200 text-xl  lg:text-2xl font-semibold hover:text-zinc-400  transition-all duration-[600ms] border-[3px] border-zinc-400 px-5 py-3 rounded-lg">
                   Contact form

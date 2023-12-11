@@ -6,9 +6,14 @@ const animations = {
   exit: { opacity: 0, x: -100 },
 };
 
-const AnimatedHorizontalPage = ({ children }:{children: React.ReactNode;}) => {
+const AnimatedHorizontalPage = ({
+  children,
+}: {
+  children: React.ReactNode;
+}) => {
   return (
     <motion.div
+
       initial="initial"
       animate="animate"
       exit="exit"
@@ -19,4 +24,4 @@ const AnimatedHorizontalPage = ({ children }:{children: React.ReactNode;}) => {
   );
 };
 
-export default AnimatedHorizontalPage
+export default AnimatedHorizontalPage;

@@ -9,6 +9,7 @@ import {
   SiCss3,
   SiDevpost,
   SiGithub,
+  SiNodedotjs,
 } from "react-icons/si";
 import { RxEnter } from "react-icons/rx";
 
@@ -17,18 +18,33 @@ import { FTImages, FTIcon } from "./FTImgExport";
 import { SpotifyImages, spotifyIcon } from "./SpotifyImgExport";
 import { GraphImages, GraphIcon } from "./DataVisualiserExport";
 import { setTrackIcon } from "./SetTrackImgExport";
-import { KanbanIcon } from "./KanbanImgExport";
+import { KanbanIcon, kanbanImages } from "./KanbanImgExport";
 const techStackIcon = "min-w-[20px] min-h-[20px] w-10 h-10";
 
 export const projects: ProjectDetail[] = [
   {
     title: "Kanban Board Plus",
     identifier: "kbp",
-    description: "",
+    description:
+      "This application is a Kanban Board based application that delves into the extension of the tools functionality in order to help improve the effectiveness and efficiency of team collaboration. This application was built using a ReactJS frontend with a NodeJS framework, both utilising Typescript. And all data was hosted in the cloud through Firebase's data storage. This application allowed its authenticated users to create their own Kanban boards and invite other users, where all contribution and activity is recorded for further analysis. Furthermore, at any point in time, the previous state of the board is able to be viewed in order to further track and measure progress.",
     icon: KanbanIcon,
-    images: [],
-    techStack: [],
-    links: [],
+    images: kanbanImages,
+    techStack: [
+      <SiReact className={`${techStackIcon}`} color={"#61DBFB"} />,
+      <SiTypescript className={`${techStackIcon}`} color={"#3780ed"} />,
+      <SiNextdotjs className={`${techStackIcon}`} />,
+      <SiTailwindcss className={`${techStackIcon}`} color={"#37d2ed"} />,
+      <SiHtml5 className={`${techStackIcon}`} color={"#ed5537"} />,
+      <SiCss3 className={`${techStackIcon}`} color={"#3789ed"} />,
+      <SiNodedotjs className={`${techStackIcon}`} color={"#37d2ed"} />,
+    ],
+    links: [
+      {
+        name: "Github",
+        icon: <SiGithub />,
+        link: "https://github.com/Dawaad/KanbanBoardPlus",
+      },
+    ],
   },
   {
     title: "SetTrack",

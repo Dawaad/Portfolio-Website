@@ -8,30 +8,12 @@ import { projects } from "../../../information/projects";
 import AnimatedVerticalPage from "../../AnimatedVerticalPage";
 import { XCircleIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
-import Carousel from "react-multi-carousel";
 
 import { useRouter } from "next/navigation";
 import { ProjectDetail } from "../../../Interfaces";
+import Slider from "./_components/Slider";
 
 function ProjectsPage({ params }: { params: { projectName: string } }) {
-  const responsive = {
-    desktop: {
-      breakpoint: { max: 3000, min: 1024 },
-      items: 2,
-      paritialVisibilityGutter: 60,
-    },
-    tablet: {
-      breakpoint: { max: 1024, min: 464 },
-      items: 1,
-      paritialVisibilityGutter: 50,
-    },
-    mobile: {
-      breakpoint: { max: 464, min: 0 },
-      items: 1,
-      paritialVisibilityGutter: 30,
-    },
-  };
-
   const [project, setProject] = useState<ProjectDetail | undefined>(
     projects.find((project) => project.identifier === params.projectName)
   );
@@ -46,41 +28,39 @@ function ProjectsPage({ params }: { params: { projectName: string } }) {
   return (
     <AnimatedVerticalPage>
       <div
-        className={`m-[2rem] mt-[4rem] md:mx-[3rem] lg:mx-[7rem]  md:mt-[5rem] text-zinc-200  `}
+        className={`mt-[4rem] lg:mt-[2rem] w-full  text-zinc-200 flex flex-col items-center justify-center  `}
       >
-        <div className="w-fit mb-4">
+        <div className="mb-4 px-4">
           <h1 className="text-5xl font-bold">{project?.title}</h1>
           <div className="h-[5px] rounded-lg mt-[1rem] bg-gradient-to-r from-orange-600 via-orange-800 w-11/12" />
         </div>
-      </div>
-      <div className="w-[70dvw] flex justify-center">
-        <Carousel
-          responsive={responsive}
-          autoPlay={true}
-          swipeable={true}
-          draggable={true}
-          showDots={true}
-          infinite={true}
-          itemClass="carousel-item-padding-40-px"
-          className="md:max-w-[50dvw]  border-zinc-200 border-2 rounded-lg  mx-12 h-[30dvh] md:h-[50dvh]"
-          partialVisible={false}
-        >
-          {project?.images.map((image, index) => {
-            return (
-              <div className="" key={index}>
-                <Image
-                  {...image}
-                  alt={image.alt}
-                  fill
-                  style={{
-                    width: "100%",
-                    height: "100%",
-                  }}
-                />
-              </div>
-            );
-          })}
-        </Carousel>
+        <Slider project={project} />
+
+        <article className="flex items-center mt-8  mx-8 md:mx-12 lg:mx-24 text-xl">
+          {project?.description}
+        </article>
+        <section>
+          <div className="flex flex-col items-center justify-center mt-8">
+            <div className="flex flex-row items-center justify-center space-x-4">
+              {project?.techStack.map((icon, index) => (
+                <div key={index}>{icon}</div>
+              ))}
+            </div>
+            <div className="flex flex-row items-center justify-center space-x-4 my-8">
+              {project?.links.map((link, index) => (
+                <div key={index}>
+                  <a
+                    href={link.link}
+                    target="_blank"
+                    className="flex flex-row items-center justify-center space-x-2"
+                  >
+                    <p>{link.name}</p>
+                  </a>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
       </div>
     </AnimatedVerticalPage>
   );

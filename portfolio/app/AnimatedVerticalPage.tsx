@@ -9,6 +9,7 @@ const animations = {
 const AnimatedVerticalPage = ({ children }:{children: React.ReactNode;}) => {
   return (
     <motion.div
+
       initial="initial"
       animate="animate"
       exit="exit"
