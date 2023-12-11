@@ -1,5 +1,5 @@
 import { ImageProps } from "next/image";
-import icon from "../public/images/Graph/graph-icon.png";
+import icon from "../public/images/Graph/Graph-icon.png";
 import graph from "../public/images/Graph/Graph.png";
 import deletion from "../public/images/Graph/Deletion.png";
 import newEdge from "../public/images/Graph/NewEdge.png";

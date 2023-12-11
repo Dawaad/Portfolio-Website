@@ -1,3 +1,4 @@
+"use client";
 import { motion } from "framer-motion";
 
 const animations = {
@@ -13,7 +14,6 @@ const AnimatedHorizontalPage = ({
 }) => {
   return (
     <motion.div
-
       initial="initial"
       animate="animate"
       exit="exit"

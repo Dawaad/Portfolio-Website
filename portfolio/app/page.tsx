@@ -5,6 +5,7 @@ import { useRef, useEffect } from "react";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import ComputerIcon from "../Illustrations/ComputerIcon";
 import Tilt from "react-parallax-tilt";
+import Head from "next/head";
 import { Fade, Slide } from "react-awesome-reveal";
 import {
   frontEndSkills,
@@ -61,7 +62,6 @@ export default function Page() {
   }, []);
 
   return (
-
     <AnimatedHorizontalPage>
       <div id="landing" className="flex justify-center items-center h-[60rem] ">
         <div className="w-full h-[20rem] p-4 m-4 md:grid md:grid-cols-2 md:grid-rows-2">

@@ -11,6 +11,11 @@ const oswald = Oswald({
   display: "swap",
 });
 
+export const metadata = {
+  title: "Jared Tucker - Home",
+  description: "Project Portfolio Website",
+};
+
 export default function RootLayout({
   children,
 }: {

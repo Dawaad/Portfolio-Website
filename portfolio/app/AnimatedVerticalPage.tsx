@@ -1,15 +1,27 @@
+"use client";
 import { motion } from "framer-motion";
 
 const animations = {
-  initial: { opacity: 0, y: 100, transition: { duration: 0.25, ease: "circIn" } },
-  animate: { opacity: 1, y: 0, transition: { duration: 0.25, ease: "circOut" } },
-  exit: { opacity: 0, y: -100, transition: { duration: 0.25, ease: "circOut" } },
+  initial: {
+    opacity: 0,
+    y: 100,
+    transition: { duration: 0.25, ease: "circIn" },
+  },
+  animate: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.25, ease: "circOut" },
+  },
+  exit: {
+    opacity: 0,
+    y: -100,
+    transition: { duration: 0.25, ease: "circOut" },
+  },
 };
 
-const AnimatedVerticalPage = ({ children }:{children: React.ReactNode;}) => {
+const AnimatedVerticalPage = ({ children }: { children: React.ReactNode }) => {
   return (
     <motion.div
-
       initial="initial"
       animate="animate"
       exit="exit"
@@ -20,4 +32,4 @@ const AnimatedVerticalPage = ({ children }:{children: React.ReactNode;}) => {
   );
 };
 
-export default AnimatedVerticalPage
+export default AnimatedVerticalPage;
