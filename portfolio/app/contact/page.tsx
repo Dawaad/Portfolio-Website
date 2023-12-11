@@ -5,6 +5,7 @@ import emailjs from "@emailjs/browser";
 import { PaperAirplaneIcon } from "@heroicons/react/24/outline";
 import emailDark from "../../public/emailDarkMode.svg";
 import Tilt from "react-parallax-tilt";
+import Head from "next/head";
 import AnimatedHorizontalPage from "../AnimatedHorizontalPage";
 import Image from "next/image";
 function page() {
@@ -39,7 +40,7 @@ function page() {
     e.target.reset();
   };
   return (
-    <AnimatedHorizontalPage>
+    <>
       <Toaster />
       <div className="h-fit lg:grid lg:grid-cols-2 ">
         <div className="m-[2rem] mt-[2rem]   md:ml-[7rem] md:mr-[4rem] lg:mr-0 md:mt-[5rem] text-zinc-200">
@@ -107,16 +108,14 @@ function page() {
           </form>
         </div>
         <div className="flex justify-center items-center">
-          
-            <Image
-              src={emailDark}
-              className="w-[800px]"
-              alt="email illustration"
-            />
-       
+          <Image
+            src={emailDark}
+            className="w-[800px]"
+            alt="email illustration"
+          />
         </div>
       </div>
-    </AnimatedHorizontalPage>
+    </>
   );
 }
 

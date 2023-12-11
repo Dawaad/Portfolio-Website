@@ -14,6 +14,9 @@ function page() {
             <h1 className="text-5xl font-bold">Projects</h1>
             <div className="h-[5px] rounded-lg mt-[1rem] bg-gradient-to-r from-orange-600 via-orange-800 w-11/12" />
           </div>
+          <section>
+            Select any project from the sidebar to view more details about the project and the technology used.
+          </section>
         </div>
       </div>
     </AnimatedVerticalPage>

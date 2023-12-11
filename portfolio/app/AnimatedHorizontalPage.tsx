@@ -1,3 +1,4 @@
+"use client";
 import { motion } from "framer-motion";
 
 const animations = {
@@ -6,7 +7,11 @@ const animations = {
   exit: { opacity: 0, x: -100 },
 };
 
-const AnimatedHorizontalPage = ({ children }:{children: React.ReactNode;}) => {
+const AnimatedHorizontalPage = ({
+  children,
+}: {
+  children: React.ReactNode;
+}) => {
   return (
     <motion.div
       initial="initial"
@@ -19,4 +24,4 @@ const AnimatedHorizontalPage = ({ children }:{children: React.ReactNode;}) => {
   );
 };
 
-export default AnimatedHorizontalPage
+export default AnimatedHorizontalPage;
